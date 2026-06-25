@@ -40,6 +40,7 @@ export default defineConfig({
             { label: "來源邊界", slug: "lab-handbook/source-boundary" },
             { label: "來源對照表", slug: "lab-handbook/source-derived-outline" },
             { label: "來源覆蓋率", slug: "lab-handbook/source-coverage" },
+            { label: "去識別完整稿", slug: "lab-handbook/redacted-full-draft" },
             { label: "日常運作", slug: "lab-handbook/operations" },
             { label: "研究訓練", slug: "lab-handbook/research-training" },
             { label: "論文與發表", slug: "lab-handbook/writing-publication" },

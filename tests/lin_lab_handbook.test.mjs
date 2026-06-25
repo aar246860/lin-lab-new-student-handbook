@@ -34,6 +34,7 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "src/content/docs/lab-handbook/source-boundary.md",
     "src/content/docs/lab-handbook/source-derived-outline.md",
     "src/content/docs/lab-handbook/source-coverage.md",
+    "src/content/docs/lab-handbook/redacted-full-draft.md",
     "src/content/docs/lab-handbook/operations.md",
     "src/content/docs/lab-handbook/research-training.md",
     "src/content/docs/lab-handbook/writing-publication.md",
@@ -60,6 +61,10 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "OCR 頁",
     "來源覆蓋率",
     "Private 完整稿",
+    "去識別完整稿",
+    "頁 001",
+    "頁 165",
+    "[REDACTED_PAGE:contact_directory]",
     "一字不差",
     "full-ocr-text-only-draft.md",
     "每週師生會面",
@@ -111,6 +116,7 @@ test("OCR pipeline and private-source ignore rules are present", () => {
   assert.ok(exists("scripts/gwguide_ocr.py"), "OCR script is missing");
   assert.match(read("scripts/gwguide_ocr.py"), /RapidOCR/, "OCR script should use the available local RapidOCR engine");
   assert.ok(exists("scripts/build-gwguide-source-corpus.mjs"), "source corpus builder is missing");
+  assert.ok(exists("scripts/publish-redacted-handbook-page.mjs"), "redacted handbook publisher is missing");
   assert.match(
     read("scripts/build-gwguide-source-corpus.mjs"),
     /full-ocr-transcript-with-confidence\.md/,
@@ -120,6 +126,11 @@ test("OCR pipeline and private-source ignore rules are present", () => {
     read("scripts/build-gwguide-source-corpus.mjs"),
     /coverage-audit\.md/,
     "source corpus builder must generate a coverage audit"
+  );
+  assert.match(
+    read("scripts/publish-redacted-handbook-page.mjs"),
+    /redacted-complete-ocr-working-draft\.md/,
+    "publisher must use the redacted source draft"
   );
 
   const gitignore = read(".gitignore");
@@ -153,7 +164,31 @@ test("handbook navigation is registered in Astro Starlight config", () => {
   assert.match(config, /lab-handbook\/source-boundary/, "source-boundary page must be linked");
   assert.match(config, /lab-handbook\/source-derived-outline/, "source-derived-outline page must be linked");
   assert.match(config, /lab-handbook\/source-coverage/, "source-coverage page must be linked");
+  assert.match(config, /lab-handbook\/redacted-full-draft/, "redacted full draft page must be linked");
   assert.match(config, /lab-handbook\/skill-pack/, "skill-pack page must be linked");
+});
+
+test("redacted full draft keeps source text public-safe", () => {
+  const redactedDraft = read("src/content/docs/lab-handbook/redacted-full-draft.md");
+  assert.match(redactedDraft, /頁 001：PXL_20260625_003112318\.MP/, "redacted draft must include first source page");
+  assert.match(redactedDraft, /頁 165：PXL_20260625_004305516/, "redacted draft must include last source page");
+  assert.match(redactedDraft, /\[REDACTED_PAGE:contact_directory\]/, "contact directory pages must be redacted");
+
+  for (const sensitivePattern of [
+    /[A-Za-z0-9._%+-]+\s*@\s*[A-Za-z0-9.-]+\.[A-Za-z]{2,}/,
+    /09[0-9]{8}/,
+    /0[0-9]{1,3}[- ][0-9]{3,4}[- ][0-9]{3,4}/,
+    /葉弘德/,
+    /黃彦祯|黄彦祯|黃彥禎|黄彥禎/,
+    /陳彦如|陳彥如/,
+    /張雅琪/,
+    /GW通錄/,
+    /IP address/,
+    /duty\.doc/,
+    /D:IGw|D:E-journal|C:\\|C:WINDOWS|C:\\TEC/,
+  ]) {
+    assert.doesNotMatch(redactedDraft, sensitivePattern, `redacted draft exposes ${sensitivePattern}`);
+  }
 });
 
 test("project Pages internal links do not escape the repository base path", () => {

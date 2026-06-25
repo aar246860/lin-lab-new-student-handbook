@@ -98,6 +98,11 @@ const redactionPatterns = [
     replacement: "[REDACTED_MAILBOX_FIELD]"
   },
   {
+    name: "local_filesystem_path",
+    pattern: /[A-Z]:[A-Za-z0-9_./\\\-\u4e00-\u9fff]+/g,
+    replacement: "[REDACTED_LOCAL_PATH]"
+  },
+  {
     name: "private_name",
     pattern: privateNamePattern,
     replacement: "[REDACTED_PERSON_NAME]"
