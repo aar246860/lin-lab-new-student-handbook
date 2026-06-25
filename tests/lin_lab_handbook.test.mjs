@@ -74,9 +74,11 @@ test("student-facing handbook pages exist without exposing maintenance notes", (
 
   const combined = handbookPages.map(read).join("\n");
   for (const requiredPhrase of [
-    "研究室手冊總覽",
-    "建議閱讀順序",
-    "你應該養成的習慣",
+    "新生入門",
+    "第一週先完成",
+    "第一個月要練會",
+    "問問題前先準備",
+    "交資料的基本要求",
     "第 1 章：規則與辦法",
     "第 2 章：論文撰寫",
     "第 3 章：寫作書籍精簡內容",
