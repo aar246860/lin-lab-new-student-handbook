@@ -67,6 +67,83 @@ function imageNameFromOcrName(ocrName) {
   return ocrName.replace(/^[0-9]+_/, "").replace(/\.md$/, ".jpg");
 }
 
+function pageNumberFromName(fileName) {
+  const match = fileName.match(/^([0-9]+)_/);
+  return match ? Number(match[1]) : null;
+}
+
+const fullyRedactedPageNumbers = new Set([164, 165]);
+
+const privateNamePattern = /葉弘德|黃彦祯|黄彦祯|黃彥禎|黄彥禎|陳彦如|陳彥如|張雅琪/g;
+
+const redactionPatterns = [
+  {
+    name: "email",
+    pattern: /[A-Z0-9._%+-]+\s*@\s*[A-Z0-9.-]+\.[A-Z]{2,}/gi,
+    replacement: "[REDACTED_EMAIL]"
+  },
+  {
+    name: "mobile_phone",
+    pattern: /09[0-9]{2}[-\s：:]*[0-9]{3}[-\s：:]*[0-9]{3}/g,
+    replacement: "[REDACTED_MOBILE]"
+  },
+  {
+    name: "landline_phone",
+    pattern: /(?:\([OH]\)\s*)?0[0-9]{1,3}[-\s][0-9]{3,4}[-\s][0-9]{3,4}\??/gi,
+    replacement: "[REDACTED_PHONE]"
+  },
+  {
+    name: "mailbox_field",
+    pattern: /Mail信箱/g,
+    replacement: "[REDACTED_MAILBOX_FIELD]"
+  },
+  {
+    name: "private_name",
+    pattern: privateNamePattern,
+    replacement: "[REDACTED_PERSON_NAME]"
+  }
+];
+
+const wholeLineRedactionRules = [
+  {
+    name: "personal_data_form",
+    pattern: /個人資料表.*(電話|地址|聯絡)/
+  },
+  {
+    name: "internal_network_or_contact_system",
+    pattern: /(IP address|老師網|Gw team 通訊|GW通錄|通訊资料|通訊資料)/
+  },
+  {
+    name: "internal_duty_file",
+    pattern: /(工作分配表單|duty\.doc)/
+  },
+  {
+    name: "standalone_address_field",
+    pattern: /^(地址|住址)[.。．…]*$/
+  }
+];
+
+function redactLine(text) {
+  const reasons = [];
+  for (const rule of wholeLineRedactionRules) {
+    if (rule.pattern.test(text)) {
+      return {
+        text: `[REDACTED_LINE:${rule.name}]`,
+        reasons: [rule.name]
+      };
+    }
+  }
+
+  let redacted = text;
+  for (const rule of redactionPatterns) {
+    const before = redacted;
+    redacted = redacted.replace(rule.pattern, rule.replacement);
+    if (redacted !== before) reasons.push(rule.name);
+  }
+
+  return { text: redacted, reasons };
+}
+
 if (!existsSync(ocrDir)) {
   console.error(`OCR directory not found: ${ocrDir}`);
   process.exit(1);
@@ -141,6 +218,29 @@ const unredactedWorkingDraft = [
   ""
 ];
 
+const redactedWorkingDraft = [
+  "# Private Redacted Complete OCR Working Draft",
+  "",
+  "> Private artifact derived from the unredacted OCR working draft.",
+  "> Sensitive contact information, internal network/contact-system references, and private-name examples have been removed or replaced with redaction markers.",
+  "> Status: OCR-complete, redacted by deterministic rules, not manually proofread.",
+  "",
+  `- Generated: ${new Date().toISOString()}`,
+  `- OCR pages: ${pages.length}`,
+  ""
+];
+
+const redactionReportRows = [
+  [
+    "page",
+    "source_image",
+    "line_index",
+    "redaction_reasons",
+    "original_text",
+    "redacted_text"
+  ].join("\t")
+];
+
 const statusRows = [
   [
     "page",
@@ -155,6 +255,7 @@ const statusRows = [
 ];
 
 for (const page of pages) {
+  const pageNumber = pageNumberFromName(page.fileName);
   rawOcrPages.push(`<!-- BEGIN ${page.fileName} | ${page.imageName} -->`, "", page.markdown.trimEnd(), "", `<!-- END ${page.fileName} -->`, "");
   fullWithConfidence.push(
     `## ${page.fileName}`,
@@ -177,14 +278,57 @@ for (const page of pages) {
     `Manual proofreading status: not checked`,
     ""
   );
-  for (const line of page.lines) {
+  redactedWorkingDraft.push(
+    `## ${page.fileName}`,
+    "",
+    `Source image: ${page.imageName}`,
+    `Image found: ${page.imageExists ? "yes" : "no"}`,
+    `OCR lines: ${page.lineCount}`,
+    `Average confidence: ${page.averageConfidence === null ? "n/a" : page.averageConfidence.toFixed(3)}`,
+    `Redaction status: deterministic sensitive-information pass applied`,
+    ""
+  );
+
+  if (fullyRedactedPageNumbers.has(pageNumber)) {
+    const marker = "[REDACTED_PAGE:contact_directory]";
+    redactedWorkingDraft.push(marker, "");
+    redactionReportRows.push(
+      [
+        page.fileName,
+        page.imageName,
+        "ALL",
+        "contact_directory_page",
+        "[entire page omitted]",
+        marker
+      ].join("\t")
+    );
+  }
+
+  for (const [lineIndex, line] of page.lines.entries()) {
     fullWithConfidence.push(`- ${line.confidence.toFixed(3)} ${line.text}`);
     textOnly.push(line.text);
     unredactedWorkingDraft.push(line.text);
+    if (!fullyRedactedPageNumbers.has(pageNumber)) {
+      const redactedLine = redactLine(line.text);
+      redactedWorkingDraft.push(redactedLine.text);
+      if (redactedLine.reasons.length > 0) {
+        redactionReportRows.push(
+          [
+            page.fileName,
+            page.imageName,
+            lineIndex + 1,
+            redactedLine.reasons.join(","),
+            line.text.replaceAll("\t", " "),
+            redactedLine.text.replaceAll("\t", " ")
+          ].join("\t")
+        );
+      }
+    }
   }
   fullWithConfidence.push("");
   textOnly.push("");
   unredactedWorkingDraft.push("");
+  redactedWorkingDraft.push("");
   statusRows.push(
     [
       page.fileName,
@@ -203,6 +347,8 @@ writeFileSync(path.join(outDir, "full-ocr-transcript-with-confidence.md"), fullW
 writeFileSync(path.join(outDir, "full-ocr-text-only-draft.md"), textOnly.join("\n"), "utf8");
 writeFileSync(path.join(outDir, "raw-ocr-pages-concatenated.md"), rawOcrPages.join("\n"), "utf8");
 writeFileSync(path.join(outDir, "unredacted-complete-ocr-working-draft.md"), unredactedWorkingDraft.join("\n"), "utf8");
+writeFileSync(path.join(outDir, "redacted-complete-ocr-working-draft.md"), redactedWorkingDraft.join("\n"), "utf8");
+writeFileSync(path.join(outDir, "redaction-report.tsv"), redactionReportRows.join("\n"), "utf8");
 writeFileSync(path.join(outDir, "verbatim-status.tsv"), statusRows.join("\n"), "utf8");
 
 const publicTextNormalized = normalize(publicHandbookText());
@@ -282,6 +428,8 @@ console.log(`Wrote ${path.join(outDir, "full-ocr-transcript-with-confidence.md")
 console.log(`Wrote ${path.join(outDir, "full-ocr-text-only-draft.md")}`);
 console.log(`Wrote ${path.join(outDir, "raw-ocr-pages-concatenated.md")}`);
 console.log(`Wrote ${path.join(outDir, "unredacted-complete-ocr-working-draft.md")}`);
+console.log(`Wrote ${path.join(outDir, "redacted-complete-ocr-working-draft.md")}`);
+console.log(`Wrote ${path.join(outDir, "redaction-report.tsv")}`);
 console.log(`Wrote ${path.join(outDir, "verbatim-status.tsv")}`);
 console.log(`Wrote ${path.join(outDir, "coverage-audit.md")}`);
 console.log(`OCR pages: ${pages.length}`);
