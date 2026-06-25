@@ -93,6 +93,7 @@ for (const fileName of readdirSync(ocrDir).filter((name) => name.endsWith(".md")
     lineCount: lines.length,
     averageConfidence,
     lowConfidenceCount: lowConfidenceLines.length,
+    markdown,
     lines,
     sectionCandidates: extractSectionCandidates(fileName, lines)
   });
@@ -116,7 +117,45 @@ const textOnly = [
   ""
 ];
 
+const rawOcrPages = [
+  "# Private Raw OCR Pages Concatenated",
+  "",
+  "> Private unredacted artifact. This preserves every OCR page markdown file as stored under `.gwguide-private/ocr/pages`.",
+  "> Do not publish. Use this as the no-deletion OCR archive before any sensitive-information pass.",
+  "",
+  `- Generated: ${new Date().toISOString()}`,
+  `- OCR pages: ${pages.length}`,
+  ""
+];
+
+const unredactedWorkingDraft = [
+  "# Private Unredacted Complete OCR Working Draft",
+  "",
+  "> Private unredacted artifact. This is the mother draft before sensitive-information deletion.",
+  "> It includes every parsed OCR text line from all 165 source pages in source order.",
+  "> Status: OCR-complete, not manually proofread. Do not call this certified verbatim until each page is checked against the images.",
+  "",
+  `- Generated: ${new Date().toISOString()}`,
+  `- OCR pages: ${pages.length}`,
+  `- Source image directory: ${imageDir}`,
+  ""
+];
+
+const statusRows = [
+  [
+    "page",
+    "source_image",
+    "image_exists",
+    "ocr_lines",
+    "average_confidence",
+    "low_confidence_lines",
+    "status",
+    "notes"
+  ].join("\t")
+];
+
 for (const page of pages) {
+  rawOcrPages.push(`<!-- BEGIN ${page.fileName} | ${page.imageName} -->`, "", page.markdown.trimEnd(), "", `<!-- END ${page.fileName} -->`, "");
   fullWithConfidence.push(
     `## ${page.fileName}`,
     "",
@@ -128,16 +167,43 @@ for (const page of pages) {
     ""
   );
   textOnly.push(`## ${page.fileName}`, "");
+  unredactedWorkingDraft.push(
+    `## ${page.fileName}`,
+    "",
+    `Source image: ${page.imageName}`,
+    `Image found: ${page.imageExists ? "yes" : "no"}`,
+    `OCR lines: ${page.lineCount}`,
+    `Average confidence: ${page.averageConfidence === null ? "n/a" : page.averageConfidence.toFixed(3)}`,
+    `Manual proofreading status: not checked`,
+    ""
+  );
   for (const line of page.lines) {
     fullWithConfidence.push(`- ${line.confidence.toFixed(3)} ${line.text}`);
     textOnly.push(line.text);
+    unredactedWorkingDraft.push(line.text);
   }
   fullWithConfidence.push("");
   textOnly.push("");
+  unredactedWorkingDraft.push("");
+  statusRows.push(
+    [
+      page.fileName,
+      page.imageName,
+      page.imageExists ? "yes" : "no",
+      page.lineCount,
+      page.averageConfidence === null ? "n/a" : page.averageConfidence.toFixed(3),
+      page.lowConfidenceCount,
+      "ocr_complete_unproofread",
+      page.lowConfidenceCount > 0 ? "manual image check required" : "manual image check still required"
+    ].join("\t")
+  );
 }
 
 writeFileSync(path.join(outDir, "full-ocr-transcript-with-confidence.md"), fullWithConfidence.join("\n"), "utf8");
 writeFileSync(path.join(outDir, "full-ocr-text-only-draft.md"), textOnly.join("\n"), "utf8");
+writeFileSync(path.join(outDir, "raw-ocr-pages-concatenated.md"), rawOcrPages.join("\n"), "utf8");
+writeFileSync(path.join(outDir, "unredacted-complete-ocr-working-draft.md"), unredactedWorkingDraft.join("\n"), "utf8");
+writeFileSync(path.join(outDir, "verbatim-status.tsv"), statusRows.join("\n"), "utf8");
 
 const publicTextNormalized = normalize(publicHandbookText());
 const sectionLedger = pages.flatMap((page) =>
@@ -214,6 +280,9 @@ writeFileSync(path.join(outDir, "coverage-audit.md"), audit.join("\n"), "utf8");
 
 console.log(`Wrote ${path.join(outDir, "full-ocr-transcript-with-confidence.md")}`);
 console.log(`Wrote ${path.join(outDir, "full-ocr-text-only-draft.md")}`);
+console.log(`Wrote ${path.join(outDir, "raw-ocr-pages-concatenated.md")}`);
+console.log(`Wrote ${path.join(outDir, "unredacted-complete-ocr-working-draft.md")}`);
+console.log(`Wrote ${path.join(outDir, "verbatim-status.tsv")}`);
 console.log(`Wrote ${path.join(outDir, "coverage-audit.md")}`);
 console.log(`OCR pages: ${pages.length}`);
 console.log(`Section candidates: ${sectionLedger.length}`);
