@@ -32,6 +32,7 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
   const handbookPages = [
     "src/content/docs/lab-handbook/index.md",
     "src/content/docs/lab-handbook/source-boundary.md",
+    "src/content/docs/lab-handbook/source-derived-outline.md",
     "src/content/docs/lab-handbook/operations.md",
     "src/content/docs/lab-handbook/research-training.md",
     "src/content/docs/lab-handbook/writing-publication.md",
@@ -54,6 +55,18 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "Lagging Darcy",
     "轉移不確定性",
     "決策可靠度",
+    "舊手冊對應",
+    "OCR 頁",
+    "每週師生會面",
+    "研究內容整理、分析與圖表",
+    "問題與可能解決途徑",
+    "程式 readme",
+    "echo print input",
+    "四層命名",
+    "工具自評",
+    "每張不超過八行",
+    "學術研究最重要的是真實",
+    "追蹤修訂",
   ]) {
     assert.ok(combined.includes(requiredPhrase), `handbook missing ${requiredPhrase}`);
   }
@@ -105,6 +118,7 @@ test("handbook navigation is registered in Astro Starlight config", () => {
   const config = read("astro.config.mjs");
   assert.match(config, /研究室手冊/, "Starlight sidebar must expose the detailed handbook");
   assert.match(config, /lab-handbook\/source-boundary/, "source-boundary page must be linked");
+  assert.match(config, /lab-handbook\/source-derived-outline/, "source-derived-outline page must be linked");
   assert.match(config, /lab-handbook\/skill-pack/, "skill-pack page must be linked");
 });
 

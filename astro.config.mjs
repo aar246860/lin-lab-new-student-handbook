@@ -38,6 +38,7 @@ export default defineConfig({
           items: [
             { label: "總覽", slug: "lab-handbook" },
             { label: "來源邊界", slug: "lab-handbook/source-boundary" },
+            { label: "來源對照表", slug: "lab-handbook/source-derived-outline" },
             { label: "日常運作", slug: "lab-handbook/operations" },
             { label: "研究訓練", slug: "lab-handbook/research-training" },
             { label: "論文與發表", slug: "lab-handbook/writing-publication" },
