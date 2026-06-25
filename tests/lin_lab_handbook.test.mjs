@@ -33,6 +33,7 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "src/content/docs/lab-handbook/index.md",
     "src/content/docs/lab-handbook/source-boundary.md",
     "src/content/docs/lab-handbook/source-derived-outline.md",
+    "src/content/docs/lab-handbook/source-coverage.md",
     "src/content/docs/lab-handbook/operations.md",
     "src/content/docs/lab-handbook/research-training.md",
     "src/content/docs/lab-handbook/writing-publication.md",
@@ -57,6 +58,10 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "決策可靠度",
     "舊手冊對應",
     "OCR 頁",
+    "來源覆蓋率",
+    "Private 完整稿",
+    "一字不差",
+    "full-ocr-text-only-draft.md",
     "每週師生會面",
     "研究內容整理、分析與圖表",
     "問題與可能解決途徑",
@@ -105,6 +110,17 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
 test("OCR pipeline and private-source ignore rules are present", () => {
   assert.ok(exists("scripts/gwguide_ocr.py"), "OCR script is missing");
   assert.match(read("scripts/gwguide_ocr.py"), /RapidOCR/, "OCR script should use the available local RapidOCR engine");
+  assert.ok(exists("scripts/build-gwguide-source-corpus.mjs"), "source corpus builder is missing");
+  assert.match(
+    read("scripts/build-gwguide-source-corpus.mjs"),
+    /full-ocr-transcript-with-confidence\.md/,
+    "source corpus builder must generate a private full transcript"
+  );
+  assert.match(
+    read("scripts/build-gwguide-source-corpus.mjs"),
+    /coverage-audit\.md/,
+    "source corpus builder must generate a coverage audit"
+  );
 
   const gitignore = read(".gitignore");
   assert.match(gitignore, /^\.gwguide-private\/$/m, "private OCR output must be gitignored");
@@ -136,6 +152,7 @@ test("handbook navigation is registered in Astro Starlight config", () => {
   assert.match(config, /研究室手冊/, "Starlight sidebar must expose the detailed handbook");
   assert.match(config, /lab-handbook\/source-boundary/, "source-boundary page must be linked");
   assert.match(config, /lab-handbook\/source-derived-outline/, "source-derived-outline page must be linked");
+  assert.match(config, /lab-handbook\/source-coverage/, "source-coverage page must be linked");
   assert.match(config, /lab-handbook\/skill-pack/, "skill-pack page must be linked");
 });
 
