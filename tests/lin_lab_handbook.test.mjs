@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 
@@ -11,6 +11,21 @@ function read(relativePath) {
 
 function exists(relativePath) {
   return existsSync(path.join(root, relativePath));
+}
+
+function walkFiles(relativeDir, extensions) {
+  const start = path.join(root, relativeDir);
+  const files = [];
+  for (const entry of readdirSync(start)) {
+    const absolutePath = path.join(start, entry);
+    const relativePath = path.relative(root, absolutePath).replaceAll("\\", "/");
+    if (statSync(absolutePath).isDirectory()) {
+      files.push(...walkFiles(relativePath, extensions));
+    } else if (extensions.includes(path.extname(entry))) {
+      files.push(relativePath);
+    }
+  }
+  return files;
 }
 
 test("Lin Lab handbook publishes detailed public pages without exposing private source material", () => {
@@ -91,4 +106,24 @@ test("handbook navigation is registered in Astro Starlight config", () => {
   assert.match(config, /研究室手冊/, "Starlight sidebar must expose the detailed handbook");
   assert.match(config, /lab-handbook\/source-boundary/, "source-boundary page must be linked");
   assert.match(config, /lab-handbook\/skill-pack/, "skill-pack page must be linked");
+});
+
+test("project Pages internal links do not escape the repository base path", () => {
+  const contentFiles = walkFiles("src/content/docs", [".md", ".mdx"]);
+  const forbiddenRootAbsoluteLinks = [
+    /^\s*link:\s*\/(?!\/)/m,
+    /\]\(\/(?!\/)/m,
+    /href=["']\/(?!\/)/m,
+  ];
+
+  for (const relativePath of contentFiles) {
+    const content = read(relativePath);
+    for (const pattern of forbiddenRootAbsoluteLinks) {
+      assert.doesNotMatch(
+        content,
+        pattern,
+        `${relativePath} contains a root-absolute internal link that breaks GitHub project Pages`
+      );
+    }
+  }
 });
