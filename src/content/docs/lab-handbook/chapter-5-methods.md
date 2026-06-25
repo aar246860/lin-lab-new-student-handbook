@@ -1,33 +1,14 @@
 ---
 title: "第 5 章：方法篇"
-description: "由去識別完整稿切分出的第 5 章，保留原手冊研究方法、學習方法與工作方法來源頁。"
+description: "研究方法、學習方法、閱讀與寫作工作習慣。"
 ---
 
 # 第 5 章：方法篇
 
-本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+本章重點：研究方法、學習方法、問題拆解、閱讀與寫作工作習慣。
+<!-- source-range:135-161 -->
 
-:::caution[來源狀態]
-這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
-:::
-
-## 章節邊界
-
-- 來源：redacted-complete-ocr-working-draft.md
-- OCR source pages 135-161
-- 本章頁數：27
-- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
-- 閱讀重點：研究方法、學習方法、問題拆解、閱讀與寫作工作習慣。
-
-## 來源頁
-
-## 頁 135：PXL_20260625_004059805
-
-- Source image: PXL_20260625_004059805.jpg
-- Image found: yes
-- OCR lines: 19
-- Average confidence: 0.917
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:135 -->
 
 ~~~text
 李鸿長，Thomas F. Staton著，74年 4月，讀書方法，聯经，台北,69pp.
@@ -52,13 +33,7 @@ description: "由去識別完整稿切分出的第 5 章，保留原手冊研究
 
 ~~~
 
-## 頁 136：PXL_20260625_004104279.MP
-
-- Source image: PXL_20260625_004104279.MP.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.936
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:136 -->
 
 ~~~text
 5.4廖榮「个人時間管理」
@@ -97,13 +72,7 @@ c.每日计：明的記方式
 
 ~~~
 
-## 頁 137：PXL_20260625_004108111
-
-- Source image: PXL_20260625_004108111.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.948
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:137 -->
 
 ~~~text
 4.下班后的时間浪费：
@@ -146,13 +115,7 @@ a.上课備及時完成
 
 ~~~
 
-## 頁 138：PXL_20260625_004113238
-
-- Source image: PXL_20260625_004113238.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.926
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:138 -->
 
 ~~~text
 ·精神狀態容易集中，吸收力特别强
@@ -197,13 +160,7 @@ b.不顺手的文具立即丢：非消耗品；消耗品
 
 ~~~
 
-## 頁 139：PXL_20260625_004118970
-
-- Source image: PXL_20260625_004118970.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:139 -->
 
 ~~~text
 技
@@ -248,13 +205,7 @@ c.有效利用通勤時間--ICRT、歌喉...
 
 ~~~
 
-## 頁 140：PXL_20260625_004123276
-
-- Source image: PXL_20260625_004123276.jpg
-- Image found: yes
-- OCR lines: 42
-- Average confidence: 0.919
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:140 -->
 
 ~~~text
 2.等待時間
@@ -302,13 +253,7 @@ c.中午開會吃便當--可避免有人到
 
 ~~~
 
-## 頁 141：PXL_20260625_004127115
-
-- Source image: PXL_20260625_004127115.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.939
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:141 -->
 
 ~~~text
 1.授權
@@ -349,13 +294,7 @@ a.學習自我承諾
 
 ~~~
 
-## 頁 142：PXL_20260625_004131552
-
-- Source image: PXL_20260625_004131552.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:142 -->
 
 ~~~text
 b.習影響一個人的成
@@ -394,13 +333,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 143：PXL_20260625_004136041
-
-- Source image: PXL_20260625_004136041.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.933
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:143 -->
 
 ~~~text
 游伯龙教授著
@@ -439,13 +372,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 144：PXL_20260625_004141283
-
-- Source image: PXL_20260625_004141283.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:144 -->
 
 ~~~text
 3.四個重要概念：
@@ -463,7 +390,6 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 8.人群中的任散：瞭解與掌握群體责任的來源、去路和可能散的動力，培養能
 力以承携享受群體的责任和發展。
 5.5.6大腦的運作（第六章）
-摘述者：[REDACTED_PERSON_NAME]
 我們以四個構想來描述腦的基本運作：
 1. 電網的構想
 想法、概念和息是用腦細胞明暗的電網變化來表示。使用越多，電網越强、越
@@ -486,13 +412,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 145：PXL_20260625_004145261
-
-- Source image: PXL_20260625_004145261.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.937
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:145 -->
 
 ~~~text
 ·传宗接代
@@ -537,13 +457,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 146：PXL_20260625_004149695
-
-- Source image: PXL_20260625_004149695.jpg
-- Image found: yes
-- OCR lines: 29
-- Average confidence: 0.953
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:146 -->
 
 ~~~text
 3.對立與互補原理
@@ -578,13 +492,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 147：PXL_20260625_004153513
-
-- Source image: PXL_20260625_004153513.jpg
-- Image found: yes
-- OCR lines: 40
-- Average confidence: 0.921
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:147 -->
 
 ~~~text
 7
@@ -630,13 +538,7 @@ c.专心工作的方法：避免中断、安心工作、建立良好的環境、
 
 ~~~
 
-## 頁 148：PXL_20260625_004200245
-
-- Source image: PXL_20260625_004200245.jpg
-- Image found: yes
-- OCR lines: 40
-- Average confidence: 0.946
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:148 -->
 
 ~~~text
 5.7李開復「做21世紀的人才」
@@ -682,13 +584,7 @@ c.實通-做過才能真正明白
 
 ~~~
 
-## 頁 149：PXL_20260625_004203483
-
-- Source image: PXL_20260625_004203483.jpg
-- Image found: yes
-- OCR lines: 17
-- Average confidence: 0.936
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:149 -->
 
 ~~~text
 12007.06
@@ -711,18 +607,12 @@ c. 有智慧分辨前雨者的不同
 
 ~~~
 
-## 頁 150：PXL_20260625_004208142.MP
-
-- Source image: PXL_20260625_004208142.MP.jpg
-- Image found: yes
-- OCR lines: 25
-- Average confidence: 0.937
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:150 -->
 
 ~~~text
 5.8為人處事要避免的21個問題
 網路工程研究所林盈達教
-2007.10[REDACTED_PERSON_NAME]改
+2007.10姓名改
 Capacity（能力）：
 2. Busy but little throughput(很忙、但没進度）
 3. Crash under heavy load（事情一多就了）
@@ -748,13 +638,7 @@ Im.Disciplines（紀律）：
 
 ~~~
 
-## 頁 151：PXL_20260625_004212112
-
-- Source image: PXL_20260625_004212112.jpg
-- Image found: yes
-- OCR lines: 28
-- Average confidence: 0.923
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:151 -->
 
 ~~~text
 5.9 電腦维修奥保养
@@ -788,13 +672,7 @@ b.安装問題：安装時注意主機板RAM的插槽处有一处凸起，只要
 
 ~~~
 
-## 頁 152：PXL_20260625_004217288.MP
-
-- Source image: PXL_20260625_004217288.MP.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.948
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:152 -->
 
 ~~~text
 1.HD→主流1TB以上
@@ -837,13 +715,7 @@ a.電源供應器故障：
 
 ~~~
 
-## 頁 153：PXL_20260625_004221018.MP
-
-- Source image: PXL_20260625_004221018.MP.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.941
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:153 -->
 
 ~~~text
 電腦電源，看看電源供應器是否正常運轉。
@@ -884,13 +756,7 @@ BIOS抓到硬碟，但無法開機
 
 ~~~
 
-## 頁 154：PXL_20260625_004226095
-
-- Source image: PXL_20260625_004226095.jpg
-- Image found: yes
-- OCR lines: 40
-- Average confidence: 0.944
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:154 -->
 
 ~~~text
 ·No partition bootable
@@ -936,13 +802,7 @@ reset（可参主機板明書的jumper設定）。
 
 ~~~
 
-## 頁 155：PXL_20260625_004227872
-
-- Source image: PXL_20260625_004227872.jpg
-- Image found: yes
-- OCR lines: 9
-- Average confidence: 0.925
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:155 -->
 
 ~~~text
 UANTUM
@@ -957,13 +817,7 @@ REPUBLICOF
 
 ~~~
 
-## 頁 156：PXL_20260625_004231066
-
-- Source image: PXL_20260625_004231066.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.953
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:156 -->
 
 ~~~text
 5.10 Fortran 教學
@@ -1007,13 +861,7 @@ INTEGER :VAR(2,3） !宣告變数为一 2*3 之矩陣
 
 ~~~
 
-## 頁 157：PXL_20260625_004234796.MP
-
-- Source image: PXL_20260625_004234796.MP.jpg
-- Image found: yes
-- OCR lines: 40
-- Average confidence: 0.953
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:157 -->
 
 ~~~text
 REPUBLI
@@ -1045,9 +893,9 @@ END SUBROUTINE SUB-NAME
 例明
 PROGRAM SPEC
 IMPLICIT NONE
-INTEGE[REDACTED_LOCAL_PATH],IJ,ND,NFFT,FS,WIN,NVERLAP
-REA[REDACTED_LOCAL_PATH],FACM,FACP,SUMW
-COMPLE[REDACTED_LOCAL_PATH]
+INTEGE指定資料夾,IJ,ND,NFFT,FS,WIN,NVERLAP
+REA指定資料夾,FACM,FACP,SUMW
+COMPLE指定資料夾
 interface
 subroutine fourl(X,nFFT,FFX)
 implicit none
@@ -1059,13 +907,7 @@ end interface
 
 ~~~
 
-## 頁 158：PXL_20260625_004238882.MP
-
-- Source image: PXL_20260625_004238882.MP.jpg
-- Image found: yes
-- OCR lines: 48
-- Average confidence: 0.956
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:158 -->
 
 ~~~text
 READ(8,*) ND
@@ -1119,13 +961,7 @@ ALLOCATE(FFX(NFFT)
 
 ~~~
 
-## 頁 159：PXL_20260625_004240917
-
-- Source image: PXL_20260625_004240917.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.946
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:159 -->
 
 ~~~text
 ！
@@ -1166,13 +1002,7 @@ RETURN
 
 ~~~
 
-## 頁 160：PXL_20260625_004245860.MP
-
-- Source image: PXL_20260625_004245860.MP.jpg
-- Image found: yes
-- OCR lines: 43
-- Average confidence: 0.952
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:160 -->
 
 ~~~text
 5.11 Efficient Programming in Fortran
@@ -1221,13 +1051,7 @@ TEMP1=A*B
 
 ~~~
 
-## 頁 161：PXL_20260625_004248851.MP
-
-- Source image: PXL_20260625_004248851.MP.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.951
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:161 -->
 
 ~~~text
 TEMP2=C*D

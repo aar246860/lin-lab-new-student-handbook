@@ -1,33 +1,14 @@
 ---
 title: "第 6 章：備忘"
-description: "由去識別完整稿切分出的第 6 章，保留原手冊備忘來源頁；含通訊錄或私密資料頁已去識別。"
+description: "研究室備忘、設備使用與舊工具操作記錄。"
 ---
 
 # 第 6 章：備忘
 
-本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+本章重點：設備使用、紙張與列印操作、舊工具備忘。
+<!-- source-range:162-165 -->
 
-:::caution[來源狀態]
-這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
-:::
-
-## 章節邊界
-
-- 來源：redacted-complete-ocr-working-draft.md
-- OCR source pages 162-165
-- 本章頁數：4
-- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
-- 閱讀重點：備忘、舊設備或聯絡資訊脈絡；含敏感資訊的頁面只保留去識別標記。
-
-## 來源頁
-
-## 頁 162：PXL_20260625_004253176
-
-- Source image: PXL_20260625_004253176.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.950
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:162 -->
 
 ~~~text
 第6章備忘
@@ -38,7 +19,7 @@ description: "由去識別完整稿切分出的第 6 章，保留原手冊備忘
 B4以上纸，可擢叠放在三孔爽内。
 3.
 例：
-[REDACTED_LOCAL_PATH]
+指定資料夾
 第一第二行加如如下，：缺的paper用紅色，有複副本用褐色，新加的paper
 4.
 用藍色。
@@ -66,13 +47,7 @@ LS size :27.94×21.6cm(11"×8.5")
 
 ~~~
 
-## 頁 163：PXL_20260625_004256066
-
-- Source image: PXL_20260625_004256066.jpg
-- Image found: yes
-- OCR lines: 20
-- Average confidence: 0.936
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:163 -->
 
 ~~~text
 奥技術垂
@@ -94,34 +69,9 @@ P
 a. 個人電腦抓不到印表机 IP，可重新啟動印表机開关(右侧下方)亚检查網路線是
 否脱落。
 送纸。
-6. 捷通维修電话： [REDACTED_PHONE]。
 
 ~~~
 
-## 頁 164：PXL_20260625_004301827.MP
+<!-- source-page:164 -->
 
-- Source image: PXL_20260625_004301827.MP.jpg
-- Image found: yes
-- OCR lines: 106
-- Average confidence: 0.949
-- Redaction status: deterministic sensitive-information pass applied
-
-~~~text
-[REDACTED_PAGE:contact_directory]
-
-
-~~~
-
-## 頁 165：PXL_20260625_004305516
-
-- Source image: PXL_20260625_004305516.jpg
-- Image found: yes
-- OCR lines: 125
-- Average confidence: 0.945
-- Redaction status: deterministic sensitive-information pass applied
-
-~~~text
-[REDACTED_PAGE:contact_directory]
-
-
-~~~
+<!-- source-page:165 -->

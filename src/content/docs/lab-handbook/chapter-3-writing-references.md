@@ -1,33 +1,14 @@
 ---
 title: "第 3 章：寫作書籍精簡內容"
-description: "由去識別完整稿切分出的第 3 章，保留原手冊寫作參考書與技術文件寫作摘要來源頁。"
+description: "寫作參考書、研究報告寫作與技術文件寫作摘要。"
 ---
 
 # 第 3 章：寫作書籍精簡內容
 
-本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+本章重點：研究報告寫作、科學論文寫作、技術文件寫作、中文作者英文科技寫作與寫作參考書摘要。
+<!-- source-range:048-095 -->
 
-:::caution[來源狀態]
-這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
-:::
-
-## 章節邊界
-
-- 來源：redacted-complete-ocr-working-draft.md
-- OCR source pages 048-095
-- 本章頁數：48
-- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
-- 閱讀重點：研究報告寫作、科學論文寫作、技術文件寫作、中文作者英文科技寫作與寫作參考書摘要。
-
-## 來源頁
-
-## 頁 048：PXL_20260625_003410163
-
-- Source image: PXL_20260625_003410163.jpg
-- Image found: yes
-- OCR lines: 43
-- Average confidence: 0.969
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:048 -->
 
 ~~~text
 2.13文撰寫参考（黄金寶教授撰）壓缩版
@@ -76,13 +57,7 @@ One line is best. Never use more than two lines.
 
 ~~~
 
-## 頁 049：PXL_20260625_003414019
-
-- Source image: PXL_20260625_003414019.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.975
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:049 -->
 
 ~~~text
 4.Conclusion
@@ -123,13 +98,7 @@ Submission
 
 ~~~
 
-## 頁 050：PXL_20260625_003418354
-
-- Source image: PXL_20260625_003418354.jpg
-- Image found: yes
-- OCR lines: 22
-- Average confidence: 0.974
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:050 -->
 
 ~~~text
 . Write just one paragraph a day if you hate to revise.
@@ -157,13 +126,7 @@ published.
 
 ~~~
 
-## 頁 051：PXL_20260625_003421597
-
-- Source image: PXL_20260625_003421597.jpg
-- Image found: yes
-- OCR lines: 43
-- Average confidence: 0.969
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:051 -->
 
 ~~~text
 2.14Nuts and Bolts of Technical Writing（黄金宝教授）
@@ -212,13 +175,7 @@ Figures
 
 ~~~
 
-## 頁 052：PXL_20260625_003427976
-
-- Source image: PXL_20260625_003427976.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.971
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:052 -->
 
 ~~~text
 · Chapter 5. References
@@ -263,13 +220,7 @@ M/g)."
 
 ~~~
 
-## 頁 053：PXL_20260625_003436999
-
-- Source image: PXL_20260625_003436999.jpg
-- Image found: yes
-- OCR lines: 44
-- Average confidence: 0.968
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:053 -->
 
 ~~~text
 was smaller (than 80  M/g)."
@@ -319,13 +270,7 @@ relationship
 
 ~~~
 
-## 頁 054：PXL_20260625_003441821
-
-- Source image: PXL_20260625_003441821.jpg
-- Image found: yes
-- OCR lines: 46
-- Average confidence: 0.972
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:054 -->
 
 ~~~text
 ——If the singular is required, use "datum", or say "this measurement".
@@ -377,13 +322,7 @@ clogging-free; sludge-free
 
 ~~~
 
-## 頁 055：PXL_20260625_003445350
-
-- Source image: PXL_20260625_003445350.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.978
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:055 -->
 
 ~~~text
 21. Tense and Voice
@@ -427,13 +366,7 @@ information in order to understand what is being discussed.
 
 ~~~
 
-## 頁 056：PXL_20260625_003450075
-
-- Source image: PXL_20260625_003450075.jpg
-- Image found: yes
-- OCR lines: 36
-- Average confidence: 0.979
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:056 -->
 
 ~~~text
 by many major technical libraries?
@@ -475,13 +408,7 @@ following reference: Sandler, Ronald B. Technical Writing, 1999.
 
 ~~~
 
-## 頁 057：PXL_20260625_003452800
-
-- Source image: PXL_20260625_003452800.jpg
-- Image found: yes
-- OCR lines: 27
-- Average confidence: 0.953
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:057 -->
 
 ~~~text
 3.1文寫作参考書目
@@ -514,13 +441,7 @@ ISI Press, Philadelphia, 158pp.
 
 ~~~
 
-## 頁 058：PXL_20260625_003502742
-
-- Source image: PXL_20260625_003502742.jpg
-- Image found: yes
-- OCR lines: 43
-- Average confidence: 0.948
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:058 -->
 
 ~~~text
 3.2曹俊汉「研究報告寫作手册」
@@ -569,13 +490,7 @@ b.名應與本文内容一致。
 
 ~~~
 
-## 頁 059：PXL_20260625_003508153
-
-- Source image: PXL_20260625_003508153.jpg
-- Image found: yes
-- OCR lines: 30
-- Average confidence: 0.941
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:059 -->
 
 ~~~text
 第一字時仍大寫。
@@ -611,13 +526,7 @@ c. 本文各行之間應維持二行或一行半之空間。
 
 ~~~
 
-## 頁 060：PXL_20260625_003513274
-
-- Source image: PXL_20260625_003513274.jpg
-- Image found: yes
-- OCR lines: 9
-- Average confidence: 0.961
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:060 -->
 
 ~~~text
 兩行安排，行與行之間離一行空間。
@@ -632,13 +541,7 @@ b.若附錄過多，则加上编號。
 
 ~~~
 
-## 頁 061：PXL_20260625_003516288
-
-- Source image: PXL_20260625_003516288.jpg
-- Image found: yes
-- OCR lines: 28
-- Average confidence: 0.936
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:061 -->
 
 ~~~text
 3.3.1文的内容(第1篇)
@@ -672,13 +575,7 @@ CBE顺序，號碼方式依其在文中出現之前後次序排列。
 
 ~~~
 
-## 頁 062：PXL_20260625_003520984
-
-- Source image: PXL_20260625_003520984.jpg
-- Image found: yes
-- OCR lines: 20
-- Average confidence: 0.957
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:062 -->
 
 ~~~text
 3.3.3原稿的寫作及校對與文查（第3篇)
@@ -704,13 +601,7 @@ CBE顺序，號碼方式依其在文中出現之前後次序排列。
 
 ~~~
 
-## 頁 063：PXL_20260625_003526410
-
-- Source image: PXL_20260625_003526410.jpg
-- Image found: yes
-- OCR lines: 32
-- Average confidence: 0.945
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:063 -->
 
 ~~~text
 3.4.1文寫作概要(第1 章)
@@ -748,13 +639,7 @@ a.受理日期一依受理日期决定刊载顺序
 
 ~~~
 
-## 頁 064：PXL_20260625_003533604
-
-- Source image: PXL_20260625_003533604.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.940
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:064 -->
 
 ~~~text
 6. 绪言
@@ -799,13 +684,7 @@ a.重要结果以文字簡述
 
 ~~~
 
-## 頁 065：PXL_20260625_003537261
-
-- Source image: PXL_20260625_003537261.jpg
-- Image found: yes
-- OCR lines: 41
-- Average confidence: 0.921
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:065 -->
 
 ~~~text
 超人氣！
@@ -852,13 +731,7 @@ d. Literature 與 Reference 的差具：
 
 ~~~
 
-## 頁 066：PXL_20260625_003541888
-
-- Source image: PXL_20260625_003541888.jpg
-- Image found: yes
-- OCR lines: 41
-- Average confidence: 0.951
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:066 -->
 
 ~~~text
 料庫或資訊庫（database)
@@ -905,13 +778,7 @@ a.人名年份方式
 
 ~~~
 
-## 頁 067：PXL_20260625_003545635
-
-- Source image: PXL_20260625_003545635.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.944
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:067 -->
 
 ~~~text
 ·後者可減少讀者讀之困
@@ -955,13 +822,7 @@ e.名之缩寫：
 
 ~~~
 
-## 頁 068：PXL_20260625_003550438
-
-- Source image: PXL_20260625_003550438.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:068 -->
 
 ~~~text
 3.4.6原稿的寫作（第6章）
@@ -1006,13 +867,7 @@ e. 定稿的检查项目表:p183~p184 18 项。
 
 ~~~
 
-## 頁 069：PXL_20260625_003554097
-
-- Source image: PXL_20260625_003554097.jpg
-- Image found: yes
-- OCR lines: 23
-- Average confidence: 0.949
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:069 -->
 
 ~~~text
 3.校對
@@ -1041,13 +896,7 @@ c.查目：表8.1
 
 ~~~
 
-## 頁 070：PXL_20260625_003557588
-
-- Source image: PXL_20260625_003557588.jpg
-- Image found: yes
-- OCR lines: 51
-- Average confidence: 0.909
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:070 -->
 
 ~~~text
 3.5工業技術研究院「技術文件寫作手册」
@@ -1104,13 +953,7 @@ e.為何老是寫不好
 
 ~~~
 
-## 頁 071：PXL_20260625_003600248
-
-- Source image: PXL_20260625_003600248.jpg
-- Image found: yes
-- OCR lines: 67
-- Average confidence: 0.930
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:071 -->
 
 ~~~text
 人氣！
@@ -1183,13 +1026,7 @@ e.時間不；f.不知如何下筆。
 
 ~~~
 
-## 頁 072：PXL_20260625_003604486
-
-- Source image: PXL_20260625_003604486.jpg
-- Image found: yes
-- OCR lines: 24
-- Average confidence: 0.958
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:072 -->
 
 ~~~text
 3.5.2文件内容的规畫
@@ -1219,13 +1056,7 @@ c.讀者在满通上有何偏好？
 
 ~~~
 
-## 頁 073：PXL_20260625_003607941.MP
-
-- Source image: PXL_20260625_003607941.MP.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.960
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:073 -->
 
 ~~~text
 3. 主管如何協助属下寫作
@@ -1268,13 +1099,7 @@ d.目錄中各標題句型應一致
 
 ~~~
 
-## 頁 074：PXL_20260625_003613003
-
-- Source image: PXL_20260625_003613003.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.953
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:074 -->
 
 ~~~text
 (b)
@@ -1319,13 +1144,7 @@ a.不事前规劃，b.希望下筆成章，c.寫改，d.負心理壓力。
 
 ~~~
 
-## 頁 075：PXL_20260625_003617466
-
-- Source image: PXL_20260625_003617466.jpg
-- Image found: yes
-- OCR lines: 31
-- Average confidence: 0.916
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:075 -->
 
 ~~~text
 七學機定後
@@ -1362,13 +1181,7 @@ b.外观圖：優點為可控制所需要的详细程度與内容。
 
 ~~~
 
-## 頁 076：PXL_20260625_003624901
-
-- Source image: PXL_20260625_003624901.jpg
-- Image found: yes
-- OCR lines: 36
-- Average confidence: 0.944
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:076 -->
 
 ~~~text
 a.最恰当的圖表類型
@@ -1410,13 +1223,7 @@ b.型態：依據客户需求主動為客户發掘問題
 
 ~~~
 
-## 頁 077：PXL_20260625_003628510
-
-- Source image: PXL_20260625_003628510.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.948
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:077 -->
 
 ~~~text
 附件。
@@ -1461,13 +1268,7 @@ Yours respectfully:下對上
 
 ~~~
 
-## 頁 078：PXL_20260625_003632564
-
-- Source image: PXL_20260625_003632564.jpg
-- Image found: yes
-- OCR lines: 17
-- Average confidence: 0.935
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:078 -->
 
 ~~~text
 c.信封格式
@@ -1490,13 +1291,7 @@ e.報告的進行
 
 ~~~
 
-## 頁 079：PXL_20260625_003646683
-
-- Source image: PXL_20260625_003646683.jpg
-- Image found: yes
-- OCR lines: 29
-- Average confidence: 0.965
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:079 -->
 
 ~~~text
 18.4
@@ -1531,17 +1326,11 @@ those proposed by Ioi and Ikeda.
 
 ~~~
 
-## 頁 080：PXL_20260625_003651166.MP
-
-- Source image: PXL_20260625_003651166.MP.jpg
-- Image found: yes
-- OCR lines: 43
-- Average confidence: 0.977
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:080 -->
 
 ~~~text
 3.6.4UNITFIVE
-PART THRE[REDACTED_LOCAL_PATH] PHRASES WHICH SPECIFY DOMAIN
+PART THRE指定資料夾 PHRASES WHICH SPECIFY DOMAIN
 科技條件限制語外。
 2.Four Categories of Specify Domain:
 a.Specifying Domain of Location
@@ -1560,7 +1349,7 @@ c.DOMAIN of CONDITION-NON-TECHNICAL CONSTRAINT
 ORIGINAL: If their is no rain, the tourist will go to Taipei tomorrow.
 REVISED: The tourist will go to Taipei tomorrow if their is no rain.
 3.6.5UNIT SIXSIMPLEANDDIRECT SENTENCEPATTERN
-PARTFOU[REDACTED_LOCAL_PATH]
+PARTFOU指定資料夾
 1.第三至第五單元：
 Prepositional phrases --- time,comparsion,specify domain
 a. Noun + Verb + Object/Preposition
@@ -1586,13 +1375,7 @@ REVISED:
 
 ~~~
 
-## 頁 081：PXL_20260625_003654617.MP
-
-- Source image: PXL_20260625_003654617.MP.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:081 -->
 
 ~~~text
 槐分
@@ -1636,13 +1419,7 @@ c.一句中只表達一個意思
 
 ~~~
 
-## 頁 082：PXL_20260625_003659875
-
-- Source image: PXL_20260625_003659875.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.978
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:082 -->
 
 ~~~text
 however, in addition, in fact... )
@@ -1686,13 +1463,7 @@ applicants wanting to become research assistants.
 
 ~~~
 
-## 頁 083：PXL_20260625_003702858
-
-- Source image: PXL_20260625_003702858.jpg
-- Image found: yes
-- OCR lines: 4
-- Average confidence: 0.882
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:083 -->
 
 ~~~text
 總分78.2
@@ -1702,13 +1473,7 @@ this study rom the calculated similarity value.
 
 ~~~
 
-## 頁 084：PXL_20260625_003709666
-
-- Source image: PXL_20260625_003709666.jpg
-- Image found: yes
-- OCR lines: 41
-- Average confidence: 0.964
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:084 -->
 
 ~~~text
 3.7杨自辰、杨力成「科技英語寫作」
@@ -1755,13 +1520,7 @@ b.注意克服常见的差錯
 
 ~~~
 
-## 頁 085：PXL_20260625_003713674
-
-- Source image: PXL_20260625_003713674.jpg
-- Image found: yes
-- OCR lines: 23
-- Average confidence: 0.907
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:085 -->
 
 ~~~text
 化學機定
@@ -1790,13 +1549,7 @@ i.關於介系词
 
 ~~~
 
-## 頁 086：PXL_20260625_003720389.MP
-
-- Source image: PXL_20260625_003720389.MP.jpg
-- Image found: yes
-- OCR lines: 42
-- Average confidence: 0.941
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:086 -->
 
 ~~~text
 b.基本内容：向致謝和致谢的原因
@@ -1844,13 +1597,7 @@ topographic map
 
 ~~~
 
-## 頁 087：PXL_20260625_003723336
-
-- Source image: PXL_20260625_003723336.jpg
-- Image found: yes
-- OCR lines: 41
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:087 -->
 
 ~~~text
 極座標圖
@@ -1897,13 +1644,7 @@ below 980, under 11 ms
 
 ~~~
 
-## 頁 088：PXL_20260625_003728494.MP
-
-- Source image: PXL_20260625_003728494.MP.jpg
-- Image found: yes
-- OCR lines: 55
-- Average confidence: 0.948
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:088 -->
 
 ~~~text
 無数
@@ -1964,13 +1705,7 @@ O-ring
 
 ~~~
 
-## 頁 089：PXL_20260625_003731643
-
-- Source image: PXL_20260625_003731643.jpg
-- Image found: yes
-- OCR lines: 52
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:089 -->
 
 ~~~text
 方底
@@ -2028,13 +1763,7 @@ non-linear(nonlinear)
 
 ~~~
 
-## 頁 090：PXL_20260625_003736213.MP
-
-- Source image: PXL_20260625_003736213.MP.jpg
-- Image found: yes
-- OCR lines: 48
-- Average confidence: 0.932
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:090 -->
 
 ~~~text
 h.括号：{}[](）
@@ -2088,13 +1817,7 @@ f.位置方位關係的表達
 
 ~~~
 
-## 頁 091：PXL_20260625_003739336
-
-- Source image: PXL_20260625_003739336.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.931
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:091 -->
 
 ~~~text
 1.衔语明性用語
@@ -2138,13 +1861,7 @@ the 100-ns instruction cycle time
 
 ~~~
 
-## 頁 092：PXL_20260625_003744243
-
-- Source image: PXL_20260625_003744243.jpg
-- Image found: yes
-- OCR lines: 42
-- Average confidence: 0.942
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:092 -->
 
 ~~~text
 a.可以直的副词
@@ -2192,13 +1909,7 @@ b.含a group of的表達用語
 
 ~~~
 
-## 頁 093：PXL_20260625_003747167.MP
-
-- Source image: PXL_20260625_003747167.MP.jpg
-- Image found: yes
-- OCR lines: 34
-- Average confidence: 0.910
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:093 -->
 
 ~~~text
 6
@@ -2238,13 +1949,7 @@ a."但是”的表達：but,however
 
 ~~~
 
-## 頁 094：PXL_20260625_003750998.MP
-
-- Source image: PXL_20260625_003750998.MP.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:094 -->
 
 ~~~text
 g.“”的表達: instead, yet
@@ -2288,13 +1993,7 @@ besides, in addition to, expect
 
 ~~~
 
-## 頁 095：PXL_20260625_003757299.MP
-
-- Source image: PXL_20260625_003757299.MP.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.926
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:095 -->
 
 ~~~text
 EL

@@ -42,11 +42,7 @@ export default defineConfig({
             { label: "第 3 章：寫作書籍精簡內容", slug: "lab-handbook/chapter-3-writing-references" },
             { label: "第 4 章：研究相關輔助資料", slug: "lab-handbook/chapter-4-tools" },
             { label: "第 5 章：方法篇", slug: "lab-handbook/chapter-5-methods" },
-            { label: "第 6 章：備忘", slug: "lab-handbook/chapter-6-memos" },
-            { label: "完整去識別母稿", slug: "lab-handbook/redacted-full-draft" },
-            { label: "來源邊界", slug: "lab-handbook/source-boundary" },
-            { label: "來源對照表", slug: "lab-handbook/source-derived-outline" },
-            { label: "來源覆蓋率", slug: "lab-handbook/source-coverage" }
+            { label: "第 6 章：備忘", slug: "lab-handbook/chapter-6-memos" }
           ]
         },
         {

@@ -1,33 +1,14 @@
 ---
 title: "第 1 章：規則與辦法"
-description: "由去識別完整稿切分出的第 1 章，保留原手冊規則、暑期工作、檔案管理與簡報規範來源頁。"
+description: "研究室規則、暑期工作、檔案管理與簡報規範。"
 ---
 
 # 第 1 章：規則與辦法
 
-本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+本章重點：研究室基本規則、暑期與開學準備、離校交接、檔案程式管理、工具自評、Group Seminar、Presentation 與學術倫理。
+<!-- source-range:001-019 -->
 
-:::caution[來源狀態]
-這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
-:::
-
-## 章節邊界
-
-- 來源：redacted-complete-ocr-working-draft.md
-- OCR source pages 001-019
-- 本章頁數：19
-- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
-- 閱讀重點：研究室基本規則、暑期與開學準備、離校交接、檔案程式管理、工具自評、Group Seminar、Presentation 與學術倫理。
-
-## 來源頁
-
-## 頁 001：PXL_20260625_003112318.MP
-
-- Source image: PXL_20260625_003112318.MP.jpg
-- Image found: yes
-- OCR lines: 6
-- Average confidence: 0.891
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:001 -->
 
 ~~~text
 超人氣！
@@ -39,13 +20,7 @@ GwGuide
 
 ~~~
 
-## 頁 002：PXL_20260625_003115339.MP
-
-- Source image: PXL_20260625_003115339.MP.jpg
-- Image found: yes
-- OCR lines: 12
-- Average confidence: 0.875
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:002 -->
 
 ~~~text
 超人氣！
@@ -58,18 +33,11 @@ h！
 卷研究
 前言
 特此謝。
-[REDACTED_PERSON_NAME]謹識
-[REDACTED_LOCAL_PATH]
+指定資料夾
 
 ~~~
 
-## 頁 003：PXL_20260625_003118328.MP
-
-- Source image: PXL_20260625_003118328.MP.jpg
-- Image found: yes
-- OCR lines: 71
-- Average confidence: 0.967
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:003 -->
 
 ~~~text
 目錄
@@ -146,13 +114,7 @@ h！
 
 ~~~
 
-## 頁 004：PXL_20260625_003121666
-
-- Source image: PXL_20260625_003121666.jpg
-- Image found: yes
-- OCR lines: 38
-- Average confidence: 0.952
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:004 -->
 
 ~~~text
 3.9柯泰德
@@ -191,18 +153,11 @@ h！
 6.4研究室瞄機操作明
 6.5環工所影印機操作明，
 6.6Windows及word快速键
-[REDACTED_LINE:internal_network_or_contact_system]
 i
 
 ~~~
 
-## 頁 005：PXL_20260625_003124636.MP
-
-- Source image: PXL_20260625_003124636.MP.jpg
-- Image found: yes
-- OCR lines: 21
-- Average confidence: 0.924
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:005 -->
 
 ~~~text
 第1章规定则興辦法（知）
@@ -229,17 +184,10 @@ d.调日中，如離開研究室雨天（含）以上’請事先告知老師。
 
 ~~~
 
-## 頁 006：PXL_20260625_003127545
-
-- Source image: PXL_20260625_003127545.jpg
-- Image found: yes
-- OCR lines: 27
-- Average confidence: 0.922
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:006 -->
 
 ~~~text
 1.2新生暑期工作
-[REDACTED_LINE:standalone_address_field]
 2.開讀本手册、下列書籍及efficient programming資料。
 b.廖慶榮著，1993年，研究報告格式手册，五南圖書出版。
 c.游伯龍著，1998年，HD習领域，時報文化出版。
@@ -268,13 +216,7 @@ e.製作三孔爽及第六章所提備忘内容
 
 ~~~
 
-## 頁 007：PXL_20260625_003129740.MP
-
-- Source image: PXL_20260625_003129740.MP.jpg
-- Image found: yes
-- OCR lines: 24
-- Average confidence: 0.943
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:007 -->
 
 ~~~text
 1.3暑假、春節與學期開學前備工作
@@ -304,13 +246,7 @@ b.整理出心得、成果、及展望（或修正）進度表。
 
 ~~~
 
-## 頁 008：PXL_20260625_003133469.MP
-
-- Source image: PXL_20260625_003133469.MP.jpg
-- Image found: yes
-- OCR lines: 20
-- Average confidence: 0.939
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:008 -->
 
 ~~~text
 1.4研究生、助理離校前知
@@ -328,7 +264,6 @@ d.文的圖形檔、表。
 e.文内解析解详細推導的手稿
 5.完稿後，把所有初稿的版本（有塗改也没關係），收集全交给老師，可供往后学弟妹
 参考。
-[REDACTED_LINE:personal_data_form]
 7.若是GW電腦、設備、或文書管理人，是否與接班人工作交接清楚？
 8.若學位文題目與研究计划有關者，應完成計划成果報告書及精簡報告。
 9.要離開交大的日期，請先與老師商定。
@@ -336,13 +271,7 @@ e.文内解析解详細推導的手稿
 
 ~~~
 
-## 頁 009：PXL_20260625_003136681.MP
-
-- Source image: PXL_20260625_003136681.MP.jpg
-- Image found: yes
-- OCR lines: 48
-- Average confidence: 0.879
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:009 -->
 
 ~~~text
 1.5檔案程式管理知
@@ -396,13 +325,7 @@ the the error funtions from Abramowitz and Stegun, p.299.
 
 ~~~
 
-## 頁 010：PXL_20260625_003140605
-
-- Source image: PXL_20260625_003140605.jpg
-- Image found: yes
-- OCR lines: 46
-- Average confidence: 0.971
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:010 -->
 
 ~~~text
 5.四命名法则：
@@ -410,17 +333,17 @@ the the error funtions from Abramowitz and Stegun, p.299.
 Chang2-Unsat solute transport-2012-HESS
 研讨會文檔名的命名：
 第一作者全名-key words-Year-conference short name摘要或全文，例：
-[REDACTED_PERSON_NAME]2-Composite-2005-農工摘要或[REDACTED_PERSON_NAME]2-2Lslug5p-2006-水利全文
+姓名2-Composite-2005-農工摘要或姓名2-2Lslug5p-2006-水利全文
 明：
 1.
 的年份、及第四層為該本期刊的簡。
 2.
-前五個字母，又[REDACTED_PERSON_NAME]2的『2』代表有兩位作者。
+前五個字母，又姓名2的『2』代表有兩位作者。
 3.
 key words：最好取用兩個或三個较容易判定内容的關鍵字
 4.
 未來所有取得文的電子檔，請放在公用電腦存檔備份，依期刊及年份分别存
-檔。存檔路径為（GW113）[REDACTED_LOCAL_PATH] short namelYear。
+檔。存檔路径為（GW113）指定資料夾 short namelYear。
 文稿从摘要到全文要給老師修改，請在檔案名后，依修改顺序加字母 a,b,c,..。例
 5.
 如第一稿檔案名种尾字加 a (如 Yeh4-CSID-2005-WRRa.doc) ，老師改完稿存檔时改為b(如
@@ -454,13 +377,7 @@ International Journal for Numerical and Analytical methods
 
 ~~~
 
-## 頁 011：PXL_20260625_003143649
-
-- Source image: PXL_20260625_003143649.jpg
-- Image found: yes
-- OCR lines: 30
-- Average confidence: 0.978
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:011 -->
 
 ~~~text
 in Geomechanics
@@ -496,13 +413,7 @@ WST
 
 ~~~
 
-## 頁 012：PXL_20260625_003147137.MP
-
-- Source image: PXL_20260625_003147137.MP.jpg
-- Image found: yes
-- OCR lines: 19
-- Average confidence: 0.930
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:012 -->
 
 ~~~text
 1.6研究生研究工具自表
@@ -527,13 +438,7 @@ d. Trunitin （防止抄鬟或雷同)
 
 ~~~
 
-## 頁 013：PXL_20260625_003149941.MP
-
-- Source image: PXL_20260625_003149941.MP.jpg
-- Image found: yes
-- OCR lines: 30
-- Average confidence: 0.929
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:013 -->
 
 ~~~text
 1.7建开讀書目
@@ -569,13 +474,7 @@ b.史濟蘭编「會英語」，學習出版社，1990
 
 ~~~
 
-## 頁 014：PXL_20260625_003153826
-
-- Source image: PXL_20260625_003153826.jpg
-- Image found: yes
-- OCR lines: 16
-- Average confidence: 0.940
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:014 -->
 
 ~~~text
 1.8研究生的權利與義務
@@ -587,23 +486,15 @@ R.850中型）
 1.8.2 義務（分携下列工作)
 1. 電腦室、實室(401,402)空間清潔与管理。
 2. 401書籍、期刊、子的整理與維護。
-[REDACTED_LINE:internal_network_or_contact_system]
 4.402儀器設備的管理與維護。
 5.布告、資料传遮、推万圖書馆購買書籍。
 6.Groupseminar時程安排人。
-[REDACTED_LINE:internal_duty_file]
 1.8.3其他
 1.每個禮拜寫每调進度。
 
 ~~~
 
-## 頁 015：PXL_20260625_003157400
-
-- Source image: PXL_20260625_003157400.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.947
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:015 -->
 
 ~~~text
 1.9Group Seminar主持人、報告人、及安排人须知
@@ -642,13 +533,7 @@ words、字體要大、每最好不超過八行。
 
 ~~~
 
-## 頁 016：PXL_20260625_003200881.MP
-
-- Source image: PXL_20260625_003200881.MP.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.937
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:016 -->
 
 ~~~text
 1.10 Presentation 须知
@@ -693,13 +578,7 @@ b.到會場時：
 
 ~~~
 
-## 頁 017：PXL_20260625_003203437.MP
-
-- Source image: PXL_20260625_003203437.MP.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.945
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:017 -->
 
 ~~~text
 6.Present時注意事：
@@ -744,13 +623,7 @@ a.做英文PowerPoint
 
 ~~~
 
-## 頁 018：PXL_20260625_003207482
-
-- Source image: PXL_20260625_003207482.jpg
-- Image found: yes
-- OCR lines: 20
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:018 -->
 
 ~~~text
 ·重點内容可用一、二行字表達，最好也有highlight。
@@ -776,17 +649,11 @@ Thank you for your attention
 
 ~~~
 
-## 頁 019：PXL_20260625_003210494
-
-- Source image: PXL_20260625_003210494.jpg
-- Image found: yes
-- OCR lines: 13
-- Average confidence: 0.936
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:019 -->
 
 ~~~text
 1. 11文的學術倫理
-2005.03.01[REDACTED_PERSON_NAME]（摘自2005.2.4 自由時報）
+2005.03.01姓名（摘自2005.2.4 自由時報）
 學術研究最重要的是真實。
 數據對不可修改或作假。（HD按：國內有很多作假案例可寻）
 外投文不可一稿兩投或兩個文稿内容相同且無創新處。

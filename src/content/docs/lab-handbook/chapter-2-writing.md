@@ -1,33 +1,14 @@
 ---
 title: "第 2 章：論文撰寫"
-description: "由去識別完整稿切分出的第 2 章，保留原手冊論文撰寫、校稿、投稿與發表流程來源頁。"
+description: "論文撰寫、校稿、研討會發表與期刊投稿流程。"
 ---
 
 # 第 2 章：論文撰寫
 
-本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+本章重點：論文進度、論文大綱、內容架構、撰寫次序、校稿、英文時態、AGU/WRR references、研討會與期刊投稿。
+<!-- source-range:020-047 -->
 
-:::caution[來源狀態]
-這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
-:::
-
-## 章節邊界
-
-- 來源：redacted-complete-ocr-working-draft.md
-- OCR source pages 020-047
-- 本章頁數：28
-- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
-- 閱讀重點：論文進度、論文大綱、內容架構、撰寫次序、校稿、英文時態、AGU/WRR references、研討會與期刊投稿。
-
-## 來源頁
-
-## 頁 020：PXL_20260625_003215613
-
-- Source image: PXL_20260625_003215613.jpg
-- Image found: yes
-- OCR lines: 29
-- Average confidence: 0.957
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:020 -->
 
 ~~~text
 第2章文拱寫
@@ -62,13 +43,7 @@ pade-2013-thesis（即拿掉a,b,c...，期刊命名法亦同）。
 
 ~~~
 
-## 頁 021：PXL_20260625_003218007
-
-- Source image: PXL_20260625_003218007.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.957
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:021 -->
 
 ~~~text
 2.2文大網架構
@@ -109,13 +84,7 @@ Model Simulation, Numerical Simulation.
 
 ~~~
 
-## 頁 022：PXL_20260625_003221996
-
-- Source image: PXL_20260625_003221996.jpg
-- Image found: yes
-- OCR lines: 33
-- Average confidence: 0.950
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:022 -->
 
 ~~~text
 2.3文撰寫内容
@@ -154,13 +123,7 @@ development.
 
 ~~~
 
-## 頁 023：PXL_20260625_003225600
-
-- Source image: PXL_20260625_003225600.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.962
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:023 -->
 
 ~~~text
 ，但别人的理是我們解問題的工具之一。其差見下面例子：
@@ -203,13 +166,7 @@ relies significantly on the assumption of stationarity.
 
 ~~~
 
-## 頁 024：PXL_20260625_003229984
-
-- Source image: PXL_20260625_003229984.jpg
-- Image found: yes
-- OCR lines: 46
-- Average confidence: 0.951
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:024 -->
 
 ~~~text
 history
@@ -261,13 +218,7 @@ doi:10.1029/2005WR004312.（姓在前丶名在後，且所有名字都需缩寫�
 
 ~~~
 
-## 頁 025：PXL_20260625_003233857
-
-- Source image: PXL_20260625_003233857.jpg
-- Image found: yes
-- OCR lines: 35
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:025 -->
 
 ~~~text
 續的研究方向或内容告别人，别人有捷足先登的可能。
@@ -308,13 +259,7 @@ no 11,1597~1605,1986 0ct.)
 
 ~~~
 
-## 頁 026：PXL_20260625_003238498
-
-- Source image: PXL_20260625_003238498.jpg
-- Image found: yes
-- OCR lines: 21
-- Average confidence: 0.939
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:026 -->
 
 ~~~text
 (f) In Appendix F, we show that the solution of the ... case is ...
@@ -341,13 +286,7 @@ Appendix G to be...
 
 ~~~
 
-## 頁 027：PXL_20260625_003241523
-
-- Source image: PXL_20260625_003241523.jpg
-- Image found: yes
-- OCR lines: 19
-- Average confidence: 0.945
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:027 -->
 
 ~~~text
 2.4文撰寫次序
@@ -372,13 +311,7 @@ Appendix G to be...
 
 ~~~
 
-## 頁 028：PXL_20260625_003246841
-
-- Source image: PXL_20260625_003246841.jpg
-- Image found: yes
-- OCR lines: 31
-- Average confidence: 0.938
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:028 -->
 
 ~~~text
 2.5文撰寫细節
@@ -415,13 +348,7 @@ distribution否则一个句子drawdown出現三次）
 
 ~~~
 
-## 頁 029：PXL_20260625_003250075
-
-- Source image: PXL_20260625_003250075.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.942
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:029 -->
 
 ~~~text
 2.5.3文格式
@@ -466,13 +393,7 @@ indicated that... .
 
 ~~~
 
-## 頁 030：PXL_20260625_003255102
-
-- Source image: PXL_20260625_003255102.jpg
-- Image found: yes
-- OCR lines: 34
-- Average confidence: 0.864
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:030 -->
 
 ~~~text
 respectively.
@@ -512,13 +433,7 @@ A,=K1K
 
 ~~~
 
-## 頁 031：PXL_20260625_003258725
-
-- Source image: PXL_20260625_003258725.jpg
-- Image found: yes
-- OCR lines: 26
-- Average confidence: 0.820
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:031 -->
 
 ~~~text
 a=L/rw
@@ -550,13 +465,7 @@ h(p)
 
 ~~~
 
-## 頁 032：PXL_20260625_003304186
-
-- Source image: PXL_20260625_003304186.jpg
-- Image found: yes
-- OCR lines: 28
-- Average confidence: 0.905
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:032 -->
 
 ~~~text
 h(P)
@@ -590,13 +499,7 @@ where r = 1, 2, . . . , (n-2)/2 where n is even.
 
 ~~~
 
-## 頁 033：PXL_20260625_003307248
-
-- Source image: PXL_20260625_003307248.jpg
-- Image found: yes
-- OCR lines: 26
-- Average confidence: 0.913
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:033 -->
 
 ~~~text
 濃度曲線（Excel畫圖效果不好，不要用）。
@@ -628,13 +531,7 @@ conductive than the formation (y = 10.o).
 
 ~~~
 
-## 頁 034：PXL_20260625_003311627
-
-- Source image: PXL_20260625_003311627.jpg
-- Image found: yes
-- OCR lines: 196
-- Average confidence: 0.958
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:034 -->
 
 ~~~text
 Table 2.
@@ -836,13 +733,7 @@ White rat.
 
 ~~~
 
-## 頁 035：PXL_20260625_003315041
-
-- Source image: PXL_20260625_003315041.jpg
-- Image found: yes
-- OCR lines: 244
-- Average confidence: 0.774
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:035 -->
 
 ~~~text
 SuTace Bow
@@ -1092,13 +983,7 @@ compost
 
 ~~~
 
-## 頁 036：PXL_20260625_003318905
-
-- Source image: PXL_20260625_003318905.jpg
-- Image found: yes
-- OCR lines: 15
-- Average confidence: 0.946
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:036 -->
 
 ~~~text
 2.6英文科技文時熊
@@ -1119,13 +1004,7 @@ b.有關结尾的其它表達方式（加一些明確的用語表達寫作即將
 
 ~~~
 
-## 頁 037：PXL_20260625_003321423
-
-- Source image: PXL_20260625_003321423.jpg
-- Image found: yes
-- OCR lines: 93
-- Average confidence: 0.902
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:037 -->
 
 ~~~text
 2.7
@@ -1224,13 +1103,7 @@ omega
 
 ~~~
 
-## 頁 038：PXL_20260625_003328929
-
-- Source image: PXL_20260625_003328929.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.981
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:038 -->
 
 ~~~text
 2.8 References in AGU Publications WRR format)
@@ -1275,13 +1148,7 @@ Expedition II
 
 ~~~
 
-## 頁 039：PXL_20260625_003332339
-
-- Source image: PXL_20260625_003332339.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.972
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:039 -->
 
 ~~~text
 [CD-ROM NASA/UARP-004], NASA Ames Res. Cent., Moffett Field, Calif..
@@ -1326,13 +1193,7 @@ Can., Ottawa, Ont.
 
 ~~~
 
-## 頁 040：PXL_20260625_003336409.MP
-
-- Source image: PXL_20260625_003336409.MP.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.980
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:040 -->
 
 ~~~text
 and mineral occurrences of the Taseko-Bridge River area, Bull. 100, 291 pp., B. C.
@@ -1359,7 +1220,7 @@ Data Centers meet these requirements. (See List of World Data Centers and Nation
 Data Centers.)
 Example:
 Hodell, D. A., R. H. Benson, and D. V. Kent (1994), Carbon Calcium Database,
-[REDACTED_EMAIL], Natl. Geophys. Data Cent., Boulder, Colo.
+作者電子信箱, Natl. Geophys. Data Cent., Boulder, Colo.
 2.8.6. Organization of the Reference List
 List references by the same first author in the following order:
 1. First author alone, list chronologically, earliest work first.
@@ -1377,13 +1238,7 @@ Smith, A., T. Jones, and L. Roberts (1997)...
 
 ~~~
 
-## 頁 041：PXL_20260625_003340037
-
-- Source image: PXL_20260625_003340037.jpg
-- Image found: yes
-- OCR lines: 39
-- Average confidence: 0.958
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:041 -->
 
 ~~~text
 特
@@ -1428,13 +1283,7 @@ Ridge, Tennessee; anonymous ftp to ftp.codl.noaa.gov)
 
 ~~~
 
-## 頁 042：PXL_20260625_003343610.MP
-
-- Source image: PXL_20260625_003343610.MP.jpg
-- Image found: yes
-- OCR lines: 6
-- Average confidence: 0.992
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:042 -->
 
 ~~~text
 2.8.9. Personal Communications/Preprints
@@ -1446,13 +1295,7 @@ R. Reynolds (manuscript in preparation, 2003)
 
 ~~~
 
-## 頁 043：PXL_20260625_003346803
-
-- Source image: PXL_20260625_003346803.jpg
-- Image found: yes
-- OCR lines: 32
-- Average confidence: 0.930
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:043 -->
 
 ~~~text
 2.9學位文或计畫報告校稿、改稿、及印製注意事项
@@ -1490,13 +1333,7 @@ i,ii,iii,iv,v,vi,vii.... . 等编列 。
 
 ~~~
 
-## 頁 044：PXL_20260625_003351985
-
-- Source image: PXL_20260625_003351985.jpg
-- Image found: yes
-- OCR lines: 24
-- Average confidence: 0.965
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:044 -->
 
 ~~~text
 2.10研讨會文撰寫
@@ -1526,13 +1363,7 @@ conference全文函及送conference摘要函
 
 ~~~
 
-## 頁 045：PXL_20260625_003356321
-
-- Source image: PXL_20260625_003356321.jpg
-- Image found: yes
-- OCR lines: 37
-- Average confidence: 0.950
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:045 -->
 
 ~~~text
 2.11期刊文撰寫與投寄
@@ -1560,7 +1391,6 @@ A4)，且只印一份，其餘四份用影印機複印。
 ·圖形要加一FigureCaptions。
 ·文中回顧的文，是否列在References中。
 2.11.2 期刊文格式
-[REDACTED_PERSON_NAME]2005/3/1
 陈彦如2007/10/04新增
 1. 投稿期刊文，一定要按照要投期刊的规定格式，一般都有 User guide 可以参考
 依循，需注意下列事：
@@ -1575,13 +1405,7 @@ ii.作者姓與名的排列方式
 
 ~~~
 
-## 頁 046：PXL_20260625_003403674
-
-- Source image: PXL_20260625_003403674.jpg
-- Image found: yes
-- OCR lines: 27
-- Average confidence: 0.912
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:046 -->
 
 ~~~text
 b.摘要：Abstract是否全部大寫且置中，又内容是否直接連在標題之後
@@ -1614,13 +1438,7 @@ Letter size format ^margin 取 2.54cm 。
 
 ~~~
 
-## 頁 047：PXL_20260625_003406601
-
-- Source image: PXL_20260625_003406601.jpg
-- Image found: yes
-- OCR lines: 14
-- Average confidence: 0.916
-- Redaction status: deterministic sensitive-information pass applied
+<!-- source-page:047 -->
 
 ~~~text
 iymce

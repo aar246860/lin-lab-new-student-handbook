@@ -26,7 +26,8 @@ const sensitivePatterns = [
   /GW通錄/,
   /IP address/,
   /duty\.doc/,
-  /D:IGw|D:E-journal|C:\\|C:WINDOWS|C:\\TEC/
+  /D:IGw|D:E-journal|C:\\|C:WINDOWS|C:\\TEC/,
+  /\[REDACTED_/
 ];
 
 function read(relativePath) {
@@ -53,16 +54,12 @@ function walkFiles(relativeDir, extensions) {
 }
 
 function pageHeadingCount(markdown) {
-  return [...markdown.matchAll(/^## 頁 [0-9]{3}：/gm)].length;
+  return [...markdown.matchAll(/^<!-- source-page:[0-9]{3} -->$/gm)].length;
 }
 
-test("source-first handbook pages exist and expose the chapterized redacted draft", () => {
+test("student-facing handbook pages exist without exposing maintenance notes", () => {
   const handbookPages = [
     "src/content/docs/lab-handbook/index.md",
-    "src/content/docs/lab-handbook/source-boundary.md",
-    "src/content/docs/lab-handbook/source-derived-outline.md",
-    "src/content/docs/lab-handbook/source-coverage.md",
-    "src/content/docs/lab-handbook/redacted-full-draft.md",
     "src/content/docs/lab-handbook/operations.md",
     "src/content/docs/lab-handbook/research-training.md",
     "src/content/docs/lab-handbook/writing-publication.md",
@@ -78,21 +75,14 @@ test("source-first handbook pages exist and expose the chapterized redacted draf
   const combined = handbookPages.map(read).join("\n");
   for (const requiredPhrase of [
     "研究室手冊總覽",
-    "去識別完整稿",
-    "完整去識別母稿",
-    "OCR source pages 001-019",
-    "OCR source pages 020-047",
-    "OCR source pages 048-095",
-    "OCR source pages 096-134",
-    "OCR source pages 135-161",
-    "OCR source pages 162-165",
+    "建議閱讀順序",
+    "你應該養成的習慣",
     "第 1 章：規則與辦法",
     "第 2 章：論文撰寫",
     "第 3 章：寫作書籍精簡內容",
     "第 4 章：研究相關輔助資料",
     "第 5 章：方法篇",
     "第 6 章：備忘",
-    "[REDACTED_PAGE:contact_directory]",
     "Group Seminar",
     "Presentation",
     "Author Guide",
@@ -102,6 +92,21 @@ test("source-first handbook pages exist and expose the chapterized redacted draf
   ]) {
     assert.ok(combined.includes(requiredPhrase), `handbook missing ${requiredPhrase}`);
   }
+
+  for (const maintenancePhrase of [
+    "去識別完整稿",
+    "完整去識別母稿",
+    "來源狀態",
+    "章節邊界",
+    "OCR source pages",
+    "Source image:",
+    "Average confidence:",
+    "Redaction status:",
+    "[REDACTED_",
+    "PXL_20260625"
+  ]) {
+    assert.ok(!combined.includes(maintenancePhrase), `student-facing handbook exposes ${maintenancePhrase}`);
+  }
 });
 
 test("chapter pages preserve source page ranges from the redacted mother draft", () => {
@@ -110,20 +115,16 @@ test("chapter pages preserve source page ranges from the redacted mother draft",
   for (const [relativePath, title, firstPage, lastPage, expectedCount] of chapterPages) {
     const content = read(relativePath);
     assert.match(content, new RegExp(`# ${title}`), `${relativePath} missing chapter title`);
-    assert.match(content, new RegExp(`OCR source pages ${firstPage}-${lastPage}`), `${relativePath} missing source range`);
-    assert.match(content, new RegExp(`## 頁 ${firstPage}：`), `${relativePath} missing first source page`);
-    assert.match(content, new RegExp(`## 頁 ${lastPage}：`), `${relativePath} missing last source page`);
+    assert.match(content, new RegExp(`<!-- source-range:${firstPage}-${lastPage} -->`), `${relativePath} missing hidden source range`);
+    assert.match(content, new RegExp(`<!-- source-page:${firstPage} -->`), `${relativePath} missing first hidden source page`);
+    assert.match(content, new RegExp(`<!-- source-page:${lastPage} -->`), `${relativePath} missing last hidden source page`);
     assert.equal(pageHeadingCount(content), expectedCount, `${relativePath} has wrong page count`);
     totalPages += expectedCount;
   }
 
   assert.equal(totalPages, 165, "chapterized public pages should cover all 165 OCR source pages");
   assert.match(read("src/content/docs/lab-handbook/chapter-1-rules.md"), /地下水研究室手册/, "chapter 1 should preserve the cover source text");
-  assert.match(
-    read("src/content/docs/lab-handbook/chapter-6-memos.md"),
-    /\[REDACTED_PAGE:contact_directory\]/,
-    "chapter 6 must preserve contact-directory redaction markers"
-  );
+  assert.doesNotMatch(read("src/content/docs/lab-handbook/chapter-6-memos.md"), /\[REDACTED_/, "chapter 6 must hide redaction markers from students");
 });
 
 test("redacted public handbook pages do not expose known private identifiers", () => {
@@ -142,6 +143,10 @@ test("OCR publishing pipeline and private-source ignore rules are present", () =
   assert.ok(exists("scripts/build-gwguide-source-corpus.mjs"), "source corpus builder is missing");
   assert.ok(exists("scripts/publish-redacted-handbook-page.mjs"), "redacted full-draft publisher is missing");
   assert.ok(exists("scripts/publish-redacted-handbook-chapters.mjs"), "redacted chapter publisher is missing");
+  assert.ok(exists("internal/lab-handbook-sources/redacted-full-draft.md"), "internal redacted full draft is missing");
+  assert.ok(exists("internal/lab-handbook-sources/source-boundary.md"), "internal source boundary note is missing");
+  assert.ok(exists("internal/lab-handbook-sources/source-derived-outline.md"), "internal source outline note is missing");
+  assert.ok(exists("internal/lab-handbook-sources/source-coverage.md"), "internal source coverage note is missing");
   assert.match(
     read("scripts/publish-redacted-handbook-chapters.mjs"),
     /redacted-complete-ocr-working-draft\.md/,
@@ -151,6 +156,11 @@ test("OCR publishing pipeline and private-source ignore rules are present", () =
     read("package.json"),
     /publish-handbook/,
     "package scripts should expose a one-command handbook regeneration path"
+  );
+  assert.match(
+    read("scripts/publish-redacted-handbook-page.mjs"),
+    /internal\/lab-handbook-sources\/redacted-full-draft\.md/,
+    "full draft publisher must write to internal notes, not public docs"
   );
 
   const gitignore = read(".gitignore");
@@ -166,13 +176,18 @@ test("handbook navigation is registered in Astro Starlight config", () => {
     "lab-handbook/chapter-3-writing-references",
     "lab-handbook/chapter-4-tools",
     "lab-handbook/chapter-5-methods",
-    "lab-handbook/chapter-6-memos",
+    "lab-handbook/chapter-6-memos"
+  ]) {
+    assert.match(config, new RegExp(slug.replaceAll("/", "\\/")), `Starlight sidebar must expose ${slug}`);
+  }
+
+  for (const hiddenSourceSlug of [
     "lab-handbook/redacted-full-draft",
     "lab-handbook/source-boundary",
     "lab-handbook/source-derived-outline",
     "lab-handbook/source-coverage"
   ]) {
-    assert.match(config, new RegExp(slug.replaceAll("/", "\\/")), `Starlight sidebar must expose ${slug}`);
+    assert.doesNotMatch(config, new RegExp(hiddenSourceSlug.replaceAll("/", "\\/")), `student sidebar should not expose ${hiddenSourceSlug}`);
   }
 });
 

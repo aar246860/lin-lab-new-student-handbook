@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const inputPath = path.join(root, ".gwguide-private/canonical/redacted-complete-ocr-working-draft.md");
-const outputPath = path.join(root, "src/content/docs/lab-handbook/redacted-full-draft.md");
+const outputPath = path.join(root, "internal/lab-handbook-sources/redacted-full-draft.md");
 
 if (!existsSync(inputPath)) {
   console.error(`Missing redacted source draft: ${inputPath}`);
