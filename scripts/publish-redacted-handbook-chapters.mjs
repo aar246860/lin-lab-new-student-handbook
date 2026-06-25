@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const inputPath = path.join(root, ".gwguide-private/canonical/redacted-complete-ocr-working-draft.md");
-const outputDir = path.join(root, "src/content/docs/lab-handbook");
+const outputDir = path.join(root, "internal/lab-handbook-sources/redacted-chapter-drafts");
 
 const chapters = [
   {

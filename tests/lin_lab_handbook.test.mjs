@@ -6,12 +6,12 @@ import test from "node:test";
 const root = path.resolve(import.meta.dirname, "..");
 
 const chapterPages = [
-  ["src/content/docs/lab-handbook/chapter-1-rules.md", "第 1 章：規則與辦法", "001", "019", 19],
-  ["src/content/docs/lab-handbook/chapter-2-writing.md", "第 2 章：論文撰寫", "020", "047", 28],
-  ["src/content/docs/lab-handbook/chapter-3-writing-references.md", "第 3 章：寫作書籍精簡內容", "048", "095", 48],
-  ["src/content/docs/lab-handbook/chapter-4-tools.md", "第 4 章：研究相關輔助資料", "096", "134", 39],
-  ["src/content/docs/lab-handbook/chapter-5-methods.md", "第 5 章：方法篇", "135", "161", 27],
-  ["src/content/docs/lab-handbook/chapter-6-memos.md", "第 6 章：備忘", "162", "165", 4]
+  ["src/content/docs/lab-handbook/chapter-1-rules.md", "第一章 規則與辦法（須知）"],
+  ["src/content/docs/lab-handbook/chapter-2-writing.md", "第二章 論文撰寫"],
+  ["src/content/docs/lab-handbook/chapter-3-writing-references.md", "第三章 寫作參考"],
+  ["src/content/docs/lab-handbook/chapter-4-tools.md", "第四章 研究相關輔助資料"],
+  ["src/content/docs/lab-handbook/chapter-5-methods.md", "第五章 方法篇"],
+  ["src/content/docs/lab-handbook/chapter-6-memos.md", "第六章 備忘"]
 ];
 
 const sensitivePatterns = [
@@ -51,10 +51,6 @@ function walkFiles(relativeDir, extensions) {
     }
   }
   return files;
-}
-
-function pageHeadingCount(markdown) {
-  return [...markdown.matchAll(/^<!-- source-page:[0-9]{3} -->$/gm)].length;
 }
 
 test("student-facing handbook pages exist without exposing maintenance notes", () => {
@@ -101,32 +97,32 @@ test("student-facing handbook pages exist without exposing maintenance notes", (
     "來源狀態",
     "章節邊界",
     "OCR source pages",
+    "source-page:",
+    "source-range:",
     "Source image:",
     "Average confidence:",
     "Redaction status:",
     "[REDACTED_",
-    "PXL_20260625"
+    "PXL_20260625",
+    "~~~text",
+    "超人氣",
+    "地下水研究室手册"
   ]) {
     assert.ok(!combined.includes(maintenancePhrase), `student-facing handbook exposes ${maintenancePhrase}`);
   }
 });
 
-test("chapter pages preserve source page ranges from the redacted mother draft", () => {
-  let totalPages = 0;
-
-  for (const [relativePath, title, firstPage, lastPage, expectedCount] of chapterPages) {
+test("chapter pages are formatted as readable handbook chapters, not raw OCR dumps", () => {
+  for (const [relativePath, title] of chapterPages) {
     const content = read(relativePath);
     assert.match(content, new RegExp(`# ${title}`), `${relativePath} missing chapter title`);
-    assert.match(content, new RegExp(`<!-- source-range:${firstPage}-${lastPage} -->`), `${relativePath} missing hidden source range`);
-    assert.match(content, new RegExp(`<!-- source-page:${firstPage} -->`), `${relativePath} missing first hidden source page`);
-    assert.match(content, new RegExp(`<!-- source-page:${lastPage} -->`), `${relativePath} missing last hidden source page`);
-    assert.equal(pageHeadingCount(content), expectedCount, `${relativePath} has wrong page count`);
-    totalPages += expectedCount;
+    assert.match(content, /^## /m, `${relativePath} should contain section headings`);
+    assert.doesNotMatch(content, /~~~text|<!-- source-page:|<!-- source-range:|^## 頁 [0-9]{3}：/m, `${relativePath} still looks like a raw OCR page`);
   }
 
-  assert.equal(totalPages, 165, "chapterized public pages should cover all 165 OCR source pages");
-  assert.match(read("src/content/docs/lab-handbook/chapter-1-rules.md"), /地下水研究室手册/, "chapter 1 should preserve the cover source text");
-  assert.doesNotMatch(read("src/content/docs/lab-handbook/chapter-6-memos.md"), /\[REDACTED_/, "chapter 6 must hide redaction markers from students");
+  assert.match(read("src/content/docs/lab-handbook/chapter-1-rules.md"), /每週師生會面要點/, "chapter 1 should contain cleaned meeting guidance");
+  assert.match(read("src/content/docs/lab-handbook/chapter-2-writing.md"), /論文撰寫須提早規劃/, "chapter 2 should contain cleaned writing guidance");
+  assert.match(read("src/content/docs/lab-handbook/chapter-6-memos.md"), /列印與掃描/, "chapter 6 should contain cleaned operations guidance");
 });
 
 test("redacted public handbook pages do not expose known private identifiers", () => {
@@ -144,20 +140,25 @@ test("OCR publishing pipeline and private-source ignore rules are present", () =
   assert.match(read("scripts/gwguide_ocr.py"), /RapidOCR/, "OCR script should use the available local RapidOCR engine");
   assert.ok(exists("scripts/build-gwguide-source-corpus.mjs"), "source corpus builder is missing");
   assert.ok(exists("scripts/publish-redacted-handbook-page.mjs"), "redacted full-draft publisher is missing");
-  assert.ok(exists("scripts/publish-redacted-handbook-chapters.mjs"), "redacted chapter publisher is missing");
+  assert.ok(exists("scripts/publish-redacted-handbook-chapters.mjs"), "internal redacted chapter draft publisher is missing");
   assert.ok(exists("internal/lab-handbook-sources/redacted-full-draft.md"), "internal redacted full draft is missing");
   assert.ok(exists("internal/lab-handbook-sources/source-boundary.md"), "internal source boundary note is missing");
   assert.ok(exists("internal/lab-handbook-sources/source-derived-outline.md"), "internal source outline note is missing");
   assert.ok(exists("internal/lab-handbook-sources/source-coverage.md"), "internal source coverage note is missing");
   assert.match(
     read("scripts/publish-redacted-handbook-chapters.mjs"),
-    /redacted-complete-ocr-working-draft\.md/,
-    "chapter publisher must use the redacted source draft"
+    /internal\/lab-handbook-sources\/redacted-chapter-drafts/,
+    "redacted chapter draft publisher must write to internal notes, not public docs"
   );
   assert.match(
     read("package.json"),
     /publish-handbook/,
     "package scripts should expose a one-command handbook regeneration path"
+  );
+  assert.doesNotMatch(
+    read("package.json"),
+    /publish-redacted-handbook-chapters/,
+    "publish-handbook must not overwrite cleaned public chapters with OCR drafts"
   );
   assert.match(
     read("scripts/publish-redacted-handbook-page.mjs"),
