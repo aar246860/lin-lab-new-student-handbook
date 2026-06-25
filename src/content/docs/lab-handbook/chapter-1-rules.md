@@ -1,0 +1,802 @@
+---
+title: "第 1 章：規則與辦法"
+description: "由去識別完整稿切分出的第 1 章，保留原手冊規則、暑期工作、檔案管理與簡報規範來源頁。"
+---
+
+# 第 1 章：規則與辦法
+
+本頁是由「去識別完整稿」直接切分出的章節版。它的目的不是重新摘要，而是把原手冊內容按章節重新編排，讓學生可以逐章閱讀，也讓後續人工校對能回到明確頁碼。
+
+:::caution[來源狀態]
+這是 OCR 完整、已去識別、尚未逐頁人工校對的公開工作稿。若要作為正式規範或對外引用，仍需回到 private 母稿與原始照片逐頁確認。
+:::
+
+## 章節邊界
+
+- 來源：redacted-complete-ocr-working-draft.md
+- OCR source pages 001-019
+- 本章頁數：19
+- 編排方式：保留原頁序、原 OCR 文字與去識別標記，只新增章節頁首與來源說明。
+- 閱讀重點：研究室基本規則、暑期與開學準備、離校交接、檔案程式管理、工具自評、Group Seminar、Presentation 與學術倫理。
+
+## 來源頁
+
+## 頁 001：PXL_20260625_003112318.MP
+
+- Source image: PXL_20260625_003112318.MP.jpg
+- Image found: yes
+- OCR lines: 6
+- Average confidence: 0.891
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+超人氣！
+h！
+特
+地下水研究室手册
+GwGuide
+2013.10.20
+
+~~~
+
+## 頁 002：PXL_20260625_003115339.MP
+
+- Source image: PXL_20260625_003115339.MP.jpg
+- Image found: yes
+- OCR lines: 12
+- Average confidence: 0.875
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+超人氣！
+h！
+特價
+99
+木技師奥韩修建築·
+請列
+寫末来投入
+卷研究
+前言
+特此謝。
+[REDACTED_PERSON_NAME]謹識
+[REDACTED_LOCAL_PATH]
+
+~~~
+
+## 頁 003：PXL_20260625_003118328.MP
+
+- Source image: PXL_20260625_003118328.MP.jpg
+- Image found: yes
+- OCR lines: 71
+- Average confidence: 0.967
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+目錄
+第1章规定则與辦法(知)
+1.1老師给的備忘
+1.2新生暑期工作
+1.3暑假、春節與學期開學前備工作
+4
+1.4 研究生、助理離校前知
+5
+1.5檔案程式管理知..
+8
+1.6 研究生研究工具自表
+9
+1.7建讀書目
+10
+1.8 研究生的權利與义務
+11
+1.9 GroupSeminar主持人、報告人、及安排人须知
+12
+1.10 Presentation 须知 ..
+15
+1.11 文的學術倫理
+16
+第2章文拱寫
+16
+2.1撰寫進度與校稿時間
+17
+2.2文大網架構
+18
+2.3 文撰寫内容
+23
+2.4文撰寫次序
+24
+2.5文撰寫细節
+32
+2.6英文科技文時態
+33
+34
+2.7希文與英文對照表
+39
+2.8 References in AGU Publications(WRR format)
+2.9 學位文或計畫報告校稿、改稿、及印製注意事
+40
+2.10研讨會文撰寫
+41
+2.11 期刊文撰寫與投寄
+43
+2.12期刊或研讨會文给老師修改稿
+44
+2.13文撰寫参考（黄金寶教授撰）—壓缩版
+47
+2.14 Nuts and Bolts of Technical Writing (黄金宝教授)
+52
+第3章 文寫作(書籍精簡内容)
+53
+3.1文寫作参考書目.
+54
+3.2曹俊漢「研究報告寫作手册」
+54
+劉台生/1991.
+57
+3.3傅祖慧「科學文寫作J（精簡版）
+59
+3.4傅祖慧「科學文寫作」
+66
+3.5工業技術研究院「技術文件寫作手册」
+75
+3.6 柯泰德 「 An English Style Approach for Chinese Technical Writers 」
+80
+3.7杨自辰、杨力成「科技英语寫作」
+93
+3.8柯泰德「科技英文编修訓手册」
+
+~~~
+
+## 頁 004：PXL_20260625_003121666
+
+- Source image: PXL_20260625_003121666.jpg
+- Image found: yes
+- OCR lines: 38
+- Average confidence: 0.952
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+3.9柯泰德
+3.10冠词（a,an,the）的用法
+第4章研究相關辅助资料（明）
+4.1交大圖書馆期刊典藏情形.
+4.2外校圖書馆GW常用期刊或圖書典藏
+4.3圆書馆使用说明..
+4.4查期刊文、國内外硕博士文
+4.5Endnote程式之使用
+4.6英文常用句首
+4.7中文標點符號
+4.8预定進度甘梯圖
+4.9Visual Fortran使用明
+4.10Tecplot使用明
+4.11Word使用明
+4.12 Grapher使用明
+4.13MATLAB使用明
+4.14MATHEMATICA使用明
+4.15Exce1使用明.
+4.16自然輸入法2003使用使用明
+第5章方法篇（研究、讀書、時間管理等）
+5.1蔡文祥「研究過程中可能遭遇的各種問題」
+5.2 研究初期相關工作
+5.3李鸿長「讀書方法」
+5.4 廖榮「个人时間管理」
+5.5 習惯领域(Habitual Domains, HD) .
+5.6 總裁子心.
+5.7 李開復「做 21世紀的人才」
+5.8 為人处事要避免的 21个問題
+5.10 Fortran 教學..
+5.11 Efficient Programming in Fortran.
+第6章備忘
+6.1三孔爽、穿孔機使用
+6.2纸再利用
+6.4研究室瞄機操作明
+6.5環工所影印機操作明，
+6.6Windows及word快速键
+[REDACTED_LINE:internal_network_or_contact_system]
+i
+
+~~~
+
+## 頁 005：PXL_20260625_003124636.MP
+
+- Source image: PXL_20260625_003124636.MP.jpg
+- Image found: yes
+- OCR lines: 21
+- Average confidence: 0.924
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+第1章规定则興辦法（知）
+1.1·老師给的備忘
+1.1.1每调師生會面要點
+1.會面前：
+寫進來。此一调進度請存.doc檔，夹檔mail给老師。
+b.將研究内容作整理、分析、及讨，以圖表呈現结果。
+c.若碰到困難時，寫下問題提出可能解決途径或方法。
+2. 會面時，請把所有資料带齊，包括有關的文獻丶计算手稿丶及輸出结果列印等，方便
+讨問題。
+3.其他
+a.如排定时間无法會面時，顺延至下午或隔日上、下午。
+b.遇期中、末考時，可停一调的會面。
+c.遇长假四天（含）以上及寒暑假時，见面日程另排。
+d.调日中，如離開研究室雨天（含）以上’請事先告知老師。
+1.1.2 向老師借用圖書期刊或手寫资料備忘
+1.勿用光筆或其他色筆塗。
+2.填寫借用簿，歸還時塗銷。
+3. 一调内归還，如有需要可再續借，借的資料應列在每调進度内。
+4.期刊看完后随时歸定位。
+5.归還時，務必放回原位將期刊排列整齊。
+6.借用書籍如要影印很多，得事先微得老師同意。
+
+~~~
+
+## 頁 006：PXL_20260625_003127545
+
+- Source image: PXL_20260625_003127545.jpg
+- Image found: yes
+- OCR lines: 27
+- Average confidence: 0.922
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.2新生暑期工作
+[REDACTED_LINE:standalone_address_field]
+2.開讀本手册、下列書籍及efficient programming資料。
+b.廖慶榮著，1993年，研究報告格式手册，五南圖書出版。
+c.游伯龍著，1998年，HD習领域，時報文化出版。
+d.傅祖慧著，1980年，科學文寫作，修訂第三版，藝軒圖書出版社。
+e.史濟蘭编「會英语」，學習出版社，1990
+分鐘以上）。
+4.個人設備：添購或分配桌子、椅子、子，決定座位。
+5.集凝研究方向的資料、文。
+6. 学习研究工具：
+a. 電腦硬體: PC(参考 5.9 「维修与保养」) 。
+b. 電腦软體：
+·文書软體: WORD, Dr. Eye,自然输入法.
+·给圖體：Grapher, Surfer,TecPlot,VISIO,
+·網路雲端软體: CuteFtp, Filezilla, Line, Skype, Dropbox
+·程式语言: FORTRAN 及其 Compilers(Visual Fortran ), Mathematica, Mathelab
+·壓缩软體：WinRAR,WinZIP.
+·其他: Excel, Power Point, Turnitin.
+·工程應用體：Aqtesolv,SPSS,IMSL,MATLAB
+c.资料集：
+·期刊文(用 key words search 到 Endnote, Google scholar);
+·圖書馆使用與查询；
+·查開聯合期刊，及填寫影印文件。
+d.文寫作與研究方法：参考2、3、及5章。
+e.製作三孔爽及第六章所提備忘内容
+7.注意十月起，開始讀書報告。
+
+~~~
+
+## 頁 007：PXL_20260625_003129740.MP
+
+- Source image: PXL_20260625_003129740.MP.jpg
+- Image found: yes
+- OCR lines: 24
+- Average confidence: 0.943
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.3暑假、春節與學期開學前備工作
+1.3.1學期開學前
+2.如果是在九月初，開學前與老師讨打算修或旁的課程。
+3.回顧半年來的研究工作。
+a.提供文獻回顧的清單（参考2.8)存隨身碟
+b.整理出心得、成果、及展望（或修正）進度表。
+4.发展中的電腦程式，应撰寫程式文件，包括程式明(comment cards)丶输入/出
+檔内容、及變數定義等，宜越详細越好(参考1.5節）。
+5.整理個人硬碟内容。
+6. 更新三孔爽内的文資料（以關字利用網路上的資源搜）。
+7.新學期開始，第二輪念柯泰德的科技英文手册
+8. 博士班學生建寫出一个业论文進度期程，以建立自己的研究目標和進程。注意至
+少每學期回顧此檔案内容，以隨時调整自己的步，將更新檔於開學第一個禮拜内
+寄給老師。
+1.3.2 春節前，有作下列件事 ：
+1.與研究有關的程式、數據檔案，都要作備份，被偷了自行負
+2.最后一天離開研究室時，把電腦和幕藏好，以防被偷
+3.鼓春節期間，放长假去旅游，但約哪一日回交大請我知道
+1.3.3 暑假需做事项
+1.重讀廖榮『時間管理』與 Gw-guide
+2.清理電腦主機内部（灰）
+3.整理自己的桌面
+4.用關字寻文，更新三孔爽（更新後通知老師）
+5.整理電腦的files
+
+~~~
+
+## 頁 008：PXL_20260625_003133469.MP
+
+- Source image: PXL_20260625_003133469.MP.jpg
+- Image found: yes
+- OCR lines: 20
+- Average confidence: 0.939
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.4研究生、助理離校前知
+2.下列东西交（還）给老師：
+a.向老師借用的圖书、期刊、及其他資料。
+b.研究室（401或402）的匙。
+c.所有文初稿本。
+d.个人資料表需更新
+3.文有關的更新版參考文獻，報表印出一份。
+方式参考1.5.1.7，寫出一个readme 檔以明光碟内容。
+圖和製表的數據檔
+b. thesis 及reference paper 的 listing (如舆三孔夹同，则免)
+c.平常 GW seminar讀報的 powerpoint (PTT)檔與文口试的 PTT 檔
+d.文的圖形檔、表。
+e.文内解析解详細推導的手稿
+5.完稿後，把所有初稿的版本（有塗改也没關係），收集全交给老師，可供往后学弟妹
+参考。
+[REDACTED_LINE:personal_data_form]
+7.若是GW電腦、設備、或文書管理人，是否與接班人工作交接清楚？
+8.若學位文題目與研究计划有關者，應完成計划成果報告書及精簡報告。
+9.要離開交大的日期，請先與老師商定。
+將名的本面交給老師后，老師才在離校程序單上名。
+
+~~~
+
+## 頁 009：PXL_20260625_003136681.MP
+
+- Source image: PXL_20260625_003136681.MP.jpg
+- Image found: yes
+- OCR lines: 48
+- Average confidence: 0.879
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.5檔案程式管理知
+1.5.1Fortran 程式
+作者、書名、年代、及數等），方便日後或後者開讀。
+2.程式中所使用的變數應力求統一，於主程式前，定義重要變數。
+分類存，為日後發展類似程式的参考。
+中。
+5.撰寫程式時，對各個input 資料檔之格式须力求統一’必要時應另行撰寫資料格式轉
+换程式。
+6. 在 output 資料要 echo print (列印) input 内容。
+7.撰寫程式時，對於輸入输出檔案名或使用參數，量避免使用交谈式（interactive
+mode），可减少執行时的 typo and typing time。
+8.程式建立後，應著手撰寫readme.txt檔，明所使用的输入、输出檔案名與格式，
+及程式内所使用参數的明與數值；其内容應力求，以利日後或他人讀與執行。
+program PSU
+source code: gw.for, input:gwdata, output:gwout
+C
+This program evaluates the diemensionless concentration profiles (C/Co vs distance) at different
+C
+times for four analytical solutions of 1D tansport in infinitive and semi-infinitive media with
+C
+various types BCs.
+C
+Variabledefinitions
+X(x)
+=
+distances from the source (meters)
+C
+C
+DX
+=
+distance interval to print out the concentration
+T(x)
+=
+time elapsed since the beginning of solute discharge (days)
+C
+C
+C
+This program was written by HD Yeh at PSU, July 3, 1997
+C
+C
+Note that The funtion exer(A,B) is adopted from VG's rept(1982)
+C
+the the error funtions from Abramowitz and Stegun, p.299.
+1.5.2檔案命名與存放
+且不要有數字或日期。
+2.研讨會與期刊文名，需用四命名，見下文。
+資料明。
+載資料檔明與更新状况。
+
+~~~
+
+## 頁 010：PXL_20260625_003140605
+
+- Source image: PXL_20260625_003140605.jpg
+- Image found: yes
+- OCR lines: 46
+- Average confidence: 0.971
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+5.四命名法则：
+『期刊文』奥『三孔爽裡文清單』檔名的命名：
+Chang2-Unsat solute transport-2012-HESS
+研讨會文檔名的命名：
+第一作者全名-key words-Year-conference short name摘要或全文，例：
+[REDACTED_PERSON_NAME]2-Composite-2005-農工摘要或[REDACTED_PERSON_NAME]2-2Lslug5p-2006-水利全文
+明：
+1.
+的年份、及第四層為該本期刊的簡。
+2.
+前五個字母，又[REDACTED_PERSON_NAME]2的『2』代表有兩位作者。
+3.
+key words：最好取用兩個或三個较容易判定内容的關鍵字
+4.
+未來所有取得文的電子檔，請放在公用電腦存檔備份，依期刊及年份分别存
+檔。存檔路径為（GW113）[REDACTED_LOCAL_PATH] short namelYear。
+文稿从摘要到全文要給老師修改，請在檔案名后，依修改顺序加字母 a,b,c,..。例
+5.
+如第一稿檔案名种尾字加 a (如 Yeh4-CSID-2005-WRRa.doc) ，老師改完稿存檔时改為b(如
+Yeh4-CSID-2005-WRRb.doc)，后續改完稿存檔時改為c，往後依此類推。到定稿要外投時
+把英文字尾拿掉（如Yeh4-CSID-2005-WRR.doc），備上傅。若外投文察回來是
+Yeh4-CSID-2005-WRR-R1b.doc°
+6.
+1Z 代表單層，2Z 雙層,Q 定流量,H 定水頭,Slug 微水試驗, Hq 定水頭井缘流量,PE:
+parameter estimation, ULC=unconfined +aquitard+confined aquifer
+表一、期刊全名及簡（shortname)對照表
+簡
+全名
+ADWR
+Advances in Water Resources
+ECM
+Energy Conversion & Management
+EF
+Environment Forensics
+EMA
+Environmental Modeling and Assessment
+GW
+Ground Water
+HGJ
+HydroGeology Journal
+HP
+Hydrological Processes
+HSJ
+Hydrological Sciences Journal
+NAG
+International Journal for Numerical and Analytical methods
+
+~~~
+
+## 頁 011：PXL_20260625_003143649
+
+- Source image: PXL_20260625_003143649.jpg
+- Image found: yes
+- OCR lines: 30
+- Average confidence: 0.978
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+in Geomechanics
+Journal of Computational in Civil engineering
+JCC
+Journal of EnvironmentEngineering
+JEE
+Journal of Hydrology
+JH
+Journal of Hydrologic Engineering
+HEENG
+Journal of Hydraulic Engineering
+HYENG
+Journal of Water Resources planning and Management
+JWPM
+Stochastic Environment Research and Risk Assessment
+SERRA
+SSSAJ
+WR
+Water Resources
+WRB
+Water Resources Bulletin
+Water Resources Management
+WRM
+WRR
+Water Resources Research
+Water Science and Technology
+WST
+1.5.3资料（Data）
+1.資料備份時應避免壓缩，以免解壓縮時造成資料毁損。
+2.所有重要資料應随手存檔更新，製作二份備份，一份自存随身碟，一份存dropbox
+或透過FTP存於公用硬碟。
+
+~~~
+
+## 頁 012：PXL_20260625_003147137.MP
+
+- Source image: PXL_20260625_003147137.MP.jpg
+- Image found: yes
+- OCR lines: 19
+- Average confidence: 0.930
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.6研究生研究工具自表
+尚可
+熟悉
+项目
+不懂
+1. 電腦硬體
+PC(電腦维修技巧)
+2. 電腦软體:
+a.作业系统：Win2003,2007
+b. 文書體： WORD, Excel, Power Point, pdf
+c. 给圖软體: GRAPHER, SURFER, TecPlot, VISIO, MATLAB
+d.網路連線软體：CuteFTP, Serv-U
+e.程式语言：FORTRAN,IMSL,Mathematica
+f. 壓缩软體: WinRAR / WinZIP
+3.资料集：
+a. Endnote, Google scholar
+b.聯合期刊、硕博士文查及影印文件填寫
+c.圖書馆使用與查询
+d. Trunitin （防止抄鬟或雷同)
+
+~~~
+
+## 頁 013：PXL_20260625_003149941.MP
+
+- Source image: PXL_20260625_003149941.MP.jpg
+- Image found: yes
+- OCR lines: 30
+- Average confidence: 0.929
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.7建开讀書目
+書籍：
+1.讀書方法：
+a.李鸿長「讀書方法j，聯經出版社，1986
+2.文寫作（中文）
+a.傅祖慧「科學文寫作」，藝軒圖書，1980（修订三版）
+b.廖榮「研究報告格式手册j，五南圖書，1994（有測驗題）
+2000。（RobertA.Day原著）
+3.文寫作（英文）
+a.柯泰德「精通科技文（報告）寫作之捷径」，華香園出版社，1993
+b.柯泰德「科技英文编修訓手册」，清蔚科技，2000
+c.柯泰德「科技英文编修訓手册—進篇」，清蔚科技，2000
+d.杨自辰、杨力成「科技英語寫作」’華懋文化，1994
+e.方克濤「英文科技寫作一文法與修原则」，全文書局，1995
+f.方克濤「英文科技文興會簡報j，全文書局，1996
+g.廖伯森 (英文研究文寫作三本)
+4.志
+a.廖慶榮「個人時間管理」，實學社，1986
+b.嚴長「總裁子心」，平安文化，1997
+c.游伯龍「習领域」，時報出版社，1998
+d.黑幼龍、李桂芬「破局而出」’天下文化，2002
+e.李遠哲、萧新煌「出女性學者给年輕學子的52封信」’天下文化，2004
+g. 李開復「做21世紀的人才」，聯經出版公司，2006
+5. 其他
+a. 林敏蕙丶許耀豪「Word於编文與報告上的应用」，博硕文化，1997
+b.史濟蘭编「會英語」，學習出版社，1990
+心得资料：
+1.蔡文祥「研究過程可能遭遇的各種問題」（5.1節）
+2.瑞與整理「英文科技文時態」（2.6節）
+3.簡志宏整理「Presentation须知j（1.9節）
+
+~~~
+
+## 頁 014：PXL_20260625_003153826
+
+- Source image: PXL_20260625_003153826.jpg
+- Image found: yes
+- OCR lines: 16
+- Average confidence: 0.940
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.8研究生的權利與義務
+1.8.1 權利
+1.隨身碟和自動筆各一。
+2. 研究生手册一本。
+R.850中型）
+4. 402室消耗性文具自取。
+1.8.2 義務（分携下列工作)
+1. 電腦室、實室(401,402)空間清潔与管理。
+2. 401書籍、期刊、子的整理與維護。
+[REDACTED_LINE:internal_network_or_contact_system]
+4.402儀器設備的管理與維護。
+5.布告、資料传遮、推万圖書馆購買書籍。
+6.Groupseminar時程安排人。
+[REDACTED_LINE:internal_duty_file]
+1.8.3其他
+1.每個禮拜寫每调進度。
+
+~~~
+
+## 頁 015：PXL_20260625_003157400
+
+- Source image: PXL_20260625_003157400.jpg
+- Image found: yes
+- OCR lines: 33
+- Average confidence: 0.947
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.9Group Seminar主持人、報告人、及安排人须知
+1.9.1主持人
+1.主持人若有事，需於報告前三天找代理人。
+報告人負责聯絡主持人。
+3.主持人需在報告前10分鐘設置好投影機等儀器，打電話通知老師。
+4.確定報告時間，一般文為20至30分鐘，研讨會為15分鐘。
+5.口頭禪記錄。
+6.控制時間，時間到前3分鐘给预警。
+7.提醒指正報告者該注意的細節（音量大小等）
+1.9.2報告人
+1.報告别人文注意事：
+a.研究的目的，請明清楚在real world的問題、背景;
+b.文作者的相關背景資料；
+c.用什方法分析或解决問題(其理基为何？);
+d.文的重點與優、缺點;
+e.文的贡獻與創新处；
+f. 投影片结尾要有paper review。
+g.所研讀的文内，提(review)到重要的或與自己的研究很相關的文，需印回來（透
+過聯合期刊或看老師是否有該篇文章）。
+2.讀文後考：
+a.能改進該文所用的方法？
+b.能吸收、引進文的優點，用在自己的研究問題上？
+3.做投影片前，温习「Presentation知」（见1.10節）。切記三個重要原则：使用Key
+words、字體要大、每最好不超過八行。
+4.報告時，拿pointer指投影幕，不要面對強光、在投影機上指指點點。
+5.報告别人文時，不用第一人。
+6.開場白：主持人，各位先進.结尾：我的報告到此结束，謝谢各位°
+7.欲變更報告時間或順序者，請於報告前一周提出。
+8.注意控制時間，報告所花時間約與數同（即11分鐘)。
+1.9.3时程安排人
+1.由研二研究生一名負任。
+發E-mail给每位成員。
+3.每年10月起，研一新生即開始安排当主持人及文報告讀。
+
+~~~
+
+## 頁 016：PXL_20260625_003200881.MP
+
+- Source image: PXL_20260625_003200881.MP.jpg
+- Image found: yes
+- OCR lines: 39
+- Average confidence: 0.937
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1.10 Presentation 须知
+檔案)。假如報告的時間很短，前面的動機丶文獻回顧等次要內容宜縮减。
+1.為何有Presentation？
+a.文刊登不易，且時間很長
+b.問題可馬上得到反應及讨
+c.可交換近期的研究成果和心得
+d.缺點：内容需精簡、且讨的時間很短
+2.先前的考处因素 ：
+a.内容要包括哪些
+大鋼、研究的主題與重點、對研究领域的贡獻、未來的研究方向
+b.要呈現怎樣的PowerPoint面貌
+3.原稿 :
+a.没經的人寫详細一點，有經的人寫大鋼
+b.前面内容量用關鍵語词，在結(才)可用完整的句子
+c.注意版面設计
+4.幻燈片或投影片製作：
+a. 内容 :
+·投影片設计，使用基本功能即可，不需太花俏、複雜
+·（避免windows新舊版软體有差）
+，一張投影片，一個報告重點
+·寫大網或要報告内容的重點（用來提醒要報告的内容）
+·量用圖表示
+·圖、表不要太複雜
+·照片要清晰易讀、明的字體不可太小
+·句尾不加句號
+·字體可用32或36号
+b.格式：
+·像海報一樣易讀的原
+·用粗體字且有些色彩（不超過四色為宜）
+·张數控制好：一張不要太多字，一張不超過八行為原
+·每张都有標題，且特明顯
+可用横線、符號指出重點
+·字體、编號、記号、颜色需一致（設定母片）
+·字與底色的對比要明顯
+5.Present 前的備：
+a.不熟内容自己要先预演
+b.到會場時：
+·先检查燈光與播放器材（音影），试播首
+·把簡要的學經歷，交給主持人
+
+~~~
+
+## 頁 017：PXL_20260625_003203437.MP
+
+- Source image: PXL_20260625_003203437.MP.jpg
+- Image found: yes
+- OCR lines: 39
+- Average confidence: 0.945
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+6.Present時注意事：
+a.守時：
+·時間控制好：别人講好久，自己的時間很快就用完
+b.儀態：
+·站姿自然，勿走來走去
+·勿手插口袋
+·適當的音量及速度
+c.衣著外表：
+·公開場合，衣著要正式
+·男生最好穿衫、繁领帶，可集中焦點
+·女生建穿素色洋装
+·注意頭髮梳整齊
+d.如何表達？
+·以雷射筆指出報告重點，指點内容時雷射筆不可打轉
+·依投影片内容，逐頂簡要明，不要照稿宣讀
+·不要有“Sorry”的情形發生
+·没把握的内容，不要太滿
+·使用一般語言，量少用術語，不要太多口頭禪
+·重點重覆提示，細節勿講太多
+，一張大約講一分鐘
+·留10%時間做總結
+7. Present 完之讨：
+a.“各位有否問題”不是報告著講的（是由主持人發問）
+b.以「我的報告就到這裡，謝謝各位」做結束
+c.主持人接話後整理講稿，但要注意問什，不要轉移讨話題
+d.事先請朋友問問題，以帶動現場的讨氣
+8.問到難以回答的問題：
+a.可商請在場的先進或老師代答
+b.請發問者留下聯络資料，回去想想後，再回覆
+9.若有人指出研究有錯时a.謝謝提供意见
+b.回去研究，會把建的意見納入
+10.主持人的责任：
+a.格控制演講及讨時間
+b.遇激烈讨時，出來打場
+c.带動現場的讨（没有人發問時，主持人需提問題）
+d.適時宣布散會或把會場交给主辦單位
+11.製作PowerPoint技巧
+a.做英文PowerPoint
+13
+
+~~~
+
+## 頁 018：PXL_20260625_003207482
+
+- Source image: PXL_20260625_003207482.jpg
+- Image found: yes
+- OCR lines: 20
+- Average confidence: 0.938
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+·重點内容可用一、二行字表達，最好也有highlight。
+b.PowerPoint常见問題
+圖片的修改：在小畫家開啟圖片修改存檔。
+在的投影片编号。
+·投影片的時間日期及logo：工具列中的检视→首/尾→加入文字。
+→可按下此動作按所要跳回的投影片位置>確定。
+·調整動作按大小及颜色：右鍵點按钮>快取圖案格式>大小丶颜色。
+C. 其他
+·按下F5鍵，開始投影片播放。
+·按下左下角『播放投影片』鍵，可直接正在視的投影片開始放映，不用頭放
+映。
+可以直接滚動滑鼠滚或按screen右捲投影片，不需在投影片上按下右鍵
+在選前一張或下一張。
+可不將圖片放入投影片中，而檔案的連結，但不建此作法，因在整個資料
+輸中，若遗失檔案的路径，造成無法連結的困。
+可在投影片中四调(上下左右)寫一些note或logo，中間寫页數，左下用交大或主瓣
+單位的logo。
+·结可用全句或每句一、二行表達重要内容，最重要的地方可用鮮顏色mark關
+鍵字。
+Thank you for your attention
+
+~~~
+
+## 頁 019：PXL_20260625_003210494
+
+- Source image: PXL_20260625_003210494.jpg
+- Image found: yes
+- OCR lines: 13
+- Average confidence: 0.936
+- Redaction status: deterministic sensitive-information pass applied
+
+~~~text
+1. 11文的學術倫理
+2005.03.01[REDACTED_PERSON_NAME]（摘自2005.2.4 自由時報）
+學術研究最重要的是真實。
+數據對不可修改或作假。（HD按：國內有很多作假案例可寻）
+外投文不可一稿兩投或兩個文稿内容相同且無創新處。
+除非是計畫出或提供數據的單位，以街名在研讨會文為原则，否则，没有参與
+研究的人員，不可在文上名。
+篇文和我們的研究非常相關而需在本文内引述或讨论，一定要明該文出處。
+需引用或参考别人的圖表时，需去函微得原作者及所發表或期刊同意，但涉及的手
+續很麻，量避免引用。若已取得作者同意，也需在圖表明已微得某人同意。
+最佳的处理方法是以别人的圖表為基，作顯著的修改，此时只要在本文内引所
+参考的文即可，圖表明不需再引。
+不抄鬟、不当引述或計畫書重複申請之事件，在學術倫理上都是不應該的行為。
+
+~~~

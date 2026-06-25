@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "publish-handbook": "node scripts/build-gwguide-source-corpus.mjs && node scripts/publish-redacted-handbook-page.mjs && node scripts/publish-redacted-handbook-chapters.mjs",
     "test": "node --test tests/*.test.mjs",
     "verify": "node scripts/verify-bootcamp.mjs && npm run test && npm run build"
   },

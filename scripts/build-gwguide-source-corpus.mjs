@@ -89,7 +89,7 @@ const redactionPatterns = [
   },
   {
     name: "landline_phone",
-    pattern: /(?:\([OH]\)\s*)?0[0-9]{1,3}[-\s][0-9]{3,4}[-\s][0-9]{3,4}\??/gi,
+    pattern: /(?:\([OH]\)\s*)?0[0-9]{1,3}[-\s](?:[0-9]{6,8}|[0-9]{3,4}[-\s][0-9]{3,4})\??/gi,
     replacement: "[REDACTED_PHONE]"
   },
   {

@@ -37,10 +37,21 @@ export default defineConfig({
           label: "研究室手冊",
           items: [
             { label: "總覽", slug: "lab-handbook" },
+            { label: "第 1 章：規則與辦法", slug: "lab-handbook/chapter-1-rules" },
+            { label: "第 2 章：論文撰寫", slug: "lab-handbook/chapter-2-writing" },
+            { label: "第 3 章：寫作書籍精簡內容", slug: "lab-handbook/chapter-3-writing-references" },
+            { label: "第 4 章：研究相關輔助資料", slug: "lab-handbook/chapter-4-tools" },
+            { label: "第 5 章：方法篇", slug: "lab-handbook/chapter-5-methods" },
+            { label: "第 6 章：備忘", slug: "lab-handbook/chapter-6-memos" },
+            { label: "完整去識別母稿", slug: "lab-handbook/redacted-full-draft" },
             { label: "來源邊界", slug: "lab-handbook/source-boundary" },
             { label: "來源對照表", slug: "lab-handbook/source-derived-outline" },
-            { label: "來源覆蓋率", slug: "lab-handbook/source-coverage" },
-            { label: "去識別完整稿", slug: "lab-handbook/redacted-full-draft" },
+            { label: "來源覆蓋率", slug: "lab-handbook/source-coverage" }
+          ]
+        },
+        {
+          label: "整理版與訓練材料",
+          items: [
             { label: "日常運作", slug: "lab-handbook/operations" },
             { label: "研究訓練", slug: "lab-handbook/research-training" },
             { label: "論文與發表", slug: "lab-handbook/writing-publication" },
