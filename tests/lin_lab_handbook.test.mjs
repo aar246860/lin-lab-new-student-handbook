@@ -67,6 +67,16 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     "每張不超過八行",
     "學術研究最重要的是真實",
     "追蹤修訂",
+    "1.1 老師給的備忘",
+    "1.1.1 每週師生會面要點",
+    "1.2 新生暑期工作",
+    "1.5.1 程式",
+    "2.2.2 中文論文大綱",
+    "2.3 論文撰寫內容",
+    "2.5.2 撰寫科技英文句子應注意事項",
+    "讀書報告",
+    "不懂、尚可、熟悉",
+    "學長姊或自己以前的論文語句，不可以照抄",
   ]) {
     assert.ok(combined.includes(requiredPhrase), `handbook missing ${requiredPhrase}`);
   }
@@ -76,10 +86,6 @@ test("Lin Lab handbook publishes detailed public pages without exposing private 
     /D:\\\\?GW/i,
     /葉弘德/,
     /黃金寶/,
-    /三孔夾/,
-    /自然輸入法\s*2003/,
-    /Visual\s+Fortran/i,
-    /Tecplot/i,
   ]) {
     assert.doesNotMatch(combined, privateOrObsolete, `public handbook exposes source-only detail: ${privateOrObsolete}`);
   }
