@@ -1,0 +1,17 @@
+# synthetic teaching dataset: simplified drawdown values for classroom practice, not field observations
+time_min,drawdown_m,pumping_rate_m3_day
+0.5,0.012,900
+1,0.021,900
+2,0.036,900
+3,0.049,900
+5,0.071,900
+8,0.096,900
+12,0.123,900
+20,0.162,900
+30,0.198,900
+45,0.236,900
+60,0.262,900
+90,0.304,900
+120,0.335,900
+180,0.382,900
+240,0.416,900

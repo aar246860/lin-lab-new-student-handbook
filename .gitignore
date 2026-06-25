@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.log
+coverage/
+.gwguide-private/
+.tmp_gwguide_preview/
